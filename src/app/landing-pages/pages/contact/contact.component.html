@@ -1,0 +1,26 @@
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <header class="section-header">
+            <h2>{{ contactContent.title }}</h2>
+            <p>{{ contactContent.description }}</p>
+        </header>
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <div class="row gy-4">
+                    <div *ngFor="let contact of contactContent.contacts" class="col-md-3">
+                        <div class="info-box">
+                            <i [class]="contact.icon"></i>
+                            <h3>{{ contact.label }}</h3>
+                            <p>{{ contact.info }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Contact Section -->
+
+<section class="pb-0">
+    <div id="map" style="height: 550px; border: 8px solid #00BFF0;"></div>
+</section>
