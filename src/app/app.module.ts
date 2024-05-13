@@ -131,6 +131,7 @@ import { CareerService } from './utilities/services/career.service';
 import { AboutService } from './utilities/services/about.service';
 import { LoginService } from './utilities/services/login.service';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { HerosubComponent } from './landing-pages/herosub/herosub.component';
 
 
 // Function to load translation files
@@ -253,6 +254,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         FooterComponent,
         HeaderComponent,
         HeroComponent,
+        HerosubComponent,
         MainComponent,
         AboutComponent,
         CareerComponent,

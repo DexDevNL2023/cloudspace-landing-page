@@ -8,7 +8,6 @@ import { AppComponent } from 'src/app/app.component';
 })
 export class MainComponent {
   isBannerVisible = true;
-  heroContent: { title: string, spanText?: string, description?: string, buttonText?: string };
 
   constructor(private router: Router, public appMain: AppComponent) {
   }
@@ -34,10 +33,14 @@ export class MainComponent {
 
   // Définissez une fonction pour naviguer vers le composant what we do
   navigateToWhatWeDo(link: string, id: number): void {
-    console.log(link);
-    console.log(id);
     const url = `${link}/${id}`;
-    console.log(url);
     this.router.navigate([url]);
+  }
+
+  scrollTo(elementId: string): void {
+      const element = document.getElementById(elementId);
+      if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+      }
   }
 }

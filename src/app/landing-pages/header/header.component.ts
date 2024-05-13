@@ -32,7 +32,7 @@ export class HeaderComponent {
       },
       {
         label: 'What We Do',
-        link: '/services',
+        link: '/service',
         subMenu: [
           { id: 1, label: 'Cloud Transformation' },
           { id: 2, label: 'Cyber Security' },

@@ -12,10 +12,10 @@
                     *ngIf="heroContent.description">{{ heroContent.description }}</h2>
                 <div *ngIf="heroContent.buttonText" data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                     <div class="text-center text-lg-start">
-                        <a (click)="appMain.navigateToUsefulLinks('about')"
+                        <a (click)="appMain.scrollTo(heroContent.buttonLink)"
                             class="btn-get-started btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
                             <span>{{ heroContent.buttonText }}</span>
-                            <i class="bi bi-arrow-right"></i>
+                            <i class="pi pi-arrow-right"></i>
                         </a>
                     </div>
                 </div>

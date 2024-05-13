@@ -1,1 +1,26 @@
-<p>about works!</p>
+
+<app-herosub [heroContent]="heroContent"></app-herosub>
+
+<!-- ======= About Section ======= -->
+<section id="who-we-are" class="about">
+    <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="content">
+                    <h2>{{ aboutContent.title }}</h2>
+                    <p *ngFor="let item of aboutContent.description">{{ item.text }}</p>
+                    <div class="text-center text-lg-start">
+                        <a (click)="appMain.navigateToContact()" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Contact Us</span>
+                            <i class="pi pi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="about-img" class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                <img [src]="aboutContent.imageUrl" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section><!-- End About Section -->
+

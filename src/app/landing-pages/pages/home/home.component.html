@@ -1,3 +1,6 @@
+
+<app-hero [heroContent]="heroContent"></app-hero>
+
 <!-- ======= Hero Section ======= -->
 <main id="main">
     <!-- ======= Services Section ======= -->
@@ -23,7 +26,7 @@
                         <p>{{ service.description }}</p>
                         <a (click)="appMain.navigateToWhatWeDo(service.id)" class="read-more cursor-pointer">
                             <span>Read More</span>
-                            <i class="bi bi-arrow-right"></i></a>
+                            <i class="pi pi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -41,10 +44,10 @@
                         <h2>{{ aboutContent.title }}</h2>
                         <p *ngFor="let item of aboutContent.description">{{ item.text }}</p>
                         <div class="text-center text-lg-start">
-                            <a (click)="appMain.navigateToUsefulLinks('about')"
+                            <a (click)="appMain.scrollTo('services')"
                                 class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
                                 <span>Read More</span>
-                                <i class="bi bi-arrow-right"></i>
+                                <i class="pi pi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -69,7 +72,7 @@
                 <ng-template let-testimonial pTemplate="testimonial">
                     <div class="testimonial-item">
                         <div class="stars">
-                            <i class="bi bi-star-fill" *ngFor="let star of getStarsArray(testimonial.stars)"></i>
+                            <i class="pi pi-star-fill" *ngFor="let star of getStarsArray(testimonial.stars)"></i>
                         </div>
                         <p>{{ testimonial.comment }}</p>
                         <div class="profile mt-auto">

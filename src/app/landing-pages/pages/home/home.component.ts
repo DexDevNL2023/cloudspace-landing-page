@@ -9,11 +9,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  heroContent: { title: string, spanText?: string, description?: string, buttonText?: string } = {
+  heroContent: { title: string, spanText?: string, description?: string, buttonText?: string, buttonLink?: string } = {
     title: 'Empowered by',
     spanText: 'Innovation',
     description: 'Process efficiency, cost reductions, and increased time to market – for business growth, cloud adoption is a non-negotiable.',
-    buttonText: 'Get Started'
+    buttonText: 'Get Started',
+    buttonLink: 'about'
   };
   servicesContent: {
     title: string,
@@ -156,7 +157,6 @@ export class HomeComponent {
         console.log(error);
       }
     );
-    this.appMain.heroContent = this.heroContent;
   }
 
   loadServices() {
