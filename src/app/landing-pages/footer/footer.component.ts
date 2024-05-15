@@ -23,14 +23,14 @@ export class FooterComponent {
       { label: 'Contact Us', link: '/contact', subMenu: [] }
     ],
     whatWeDo: [
-      { id: 1, label: 'Cloud Transformation', link: '/services' },
+      { id: 1, label: 'Cloud Transformation', link: '/service' },
       { id: 2, label: 'Cyber Security', link: '/services' },
-      { id: 3, label: 'Networking Engineering', link: '/services' },
-      { id: 4, label: 'Training', link: '/services' },
-      { id: 5, label: 'Web Development', link: '/services' },
-      { id: 6, label: 'Application Development', link: '/services' },
-      { id: 7, label: 'Artificial Intelligence', link: '/services' },
-      { id: 8, label: 'NOC & SOC', link: '/services' }
+      { id: 3, label: 'Networking Engineering', link: '/service' },
+      { id: 4, label: 'Training', link: '/service' },
+      { id: 5, label: 'Web Development', link: '/service' },
+      { id: 6, label: 'Application Development', link: '/service' },
+      { id: 7, label: 'Artificial Intelligence', link: '/service' },
+      { id: 8, label: 'NOC & SOC', link: '/service' }
     ],
     address: '9994 Sowder Village, Sq #508, Manassas VA 20109',
     phone: '+1-855-200-7653',

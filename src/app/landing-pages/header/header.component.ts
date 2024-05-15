@@ -17,7 +17,10 @@ export class HeaderComponent {
       link: string,
       subMenu: {
         id: number,
-        label: string }[] }[] } = {
+        label: string 
+      }[]
+    }[] 
+  } = {
     color: '#3D72B4',
     logoUrl: 'assets/img/logo.jpeg',
     menuItems: [
@@ -27,8 +30,8 @@ export class HeaderComponent {
         link: '/about',
         subMenu: [
           { id: 1, label: 'Who We Are' },
-          { id: 2, label: 'Why CloudSpace' },
-        ],
+          { id: 2, label: 'Why CloudSpace' }
+        ]
       },
       {
         label: 'What We Do',
@@ -41,12 +44,12 @@ export class HeaderComponent {
           { id: 5, label: 'Web Development' },
           { id: 6, label: 'Application Development' },
           { id: 7, label: 'Artificial Intelligence' },
-          { id: 8, label: 'Managed Services (NOC & SOC)' },
-        ],
+          { id: 8, label: 'Managed Services (NOC & SOC)' }
+        ]
       },
       { label: 'Career', link: '/career', subMenu: [] },
-      { label: 'Contact Us', link: '/contact', subMenu: [] },
-    ],
+      { label: 'Contact Us', link: '/contact', subMenu: [] }
+    ]
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] } = { label: 'Home', link: '/', subMenu: [] };
   currentLanguage: string = 'fr';
@@ -107,6 +110,5 @@ export class HeaderComponent {
   toggleDropdown(menuItem: { label: string, link: string, subMenu: { id: number, label: string }[] }): void {
       this.menuItemSelected = menuItem;
       this.dropdownVisible = !this.dropdownVisible;
-      console.log(this.menuItemSelected.subMenu);
   }
 }

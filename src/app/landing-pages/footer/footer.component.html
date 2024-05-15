@@ -35,7 +35,7 @@
                             <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)" class="nav-link cursor-pointer">{{ menuItem.label }}  <i class="pi pi-chevron-right"></i></a>
                             <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected">
                               <li *ngFor="let subItem of menuItemSelected.subMenu">
-                                <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(subItem.link, subItem.id)">{{ subItem.label }}</a>
+                                <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{ subItem.label }}</a>
                               </li>
                             </ul>
                         </li>

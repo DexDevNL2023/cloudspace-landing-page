@@ -10,87 +10,87 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   heroContent: { title: string, spanText?: string, description?: string, buttonText?: string, buttonLink?: string } = {
-    title: 'Empowered by',
-    spanText: 'Innovation',
-    description: 'Process efficiency, cost reductions, and increased time to market – for business growth, cloud adoption is a non-negotiable.',
-    buttonText: 'Get Started',
-    buttonLink: 'about'
+    title: "Empowered by",
+    spanText: "Innovation",
+    description: "Process efficiency, cost reductions, and increased time to market – for business growth, cloud adoption is a non-negotiable.",
+    buttonText: "Get Started",
+    buttonLink: "about"
   };
   servicesContent: {
     title: string,
     description: string,
     services: { id: number; icon: string; title: string; description: string; color?: string; delay?: number }[] } = {
-    title: 'Why CloudSpace?',
-    description: 'The people supporting some of the most complex government and commercial projects across the country. We ensure today is safe and tomorrow is smarter. Offering the technology transformations, strategy and mission services needed to get the job done. Enough about us. Let’s get to work.',
+    title: "Why CloudSpace?",
+    description: "The people supporting some of the most complex government and commercial projects across the country. We ensure today is safe and tomorrow is smarter. Offering the technology transformations, strategy and mission services needed to get the job done. Enough about us. Let’s get to work.",
     services: [
       {
         id: 1,
-        icon: 'assets/img/services/cloud_transformation.png',
-        title: 'Cloud Transformation',
-        description: 'We translate the language of the cloud into the language of the mission.',
-        color: 'blue',
+        icon: "assets/img/services/cloud_transformation.png",
+        title: "Cloud Transformation",
+        description: "We translate the language of the cloud into the language of the mission.",
+        color: "blue",
         delay: 200
       },
       {
         id: 2,
-        icon: 'assets/img/services/cyber_security.png',
-        title: 'Cyber Security',
-        description: 'We secure today, embedding resilient cyber solutions into every aspect of the mission.',
-        color: 'dark-blue',
+        icon: "assets/img/services/cyber_security.png",
+        title: "Cyber Security",
+        description: "We secure today, embedding resilient cyber solutions into every aspect of the mission.",
+        color: "dark-blue",
         delay: 300
       },
       {
         id: 3,
-        icon: 'assets/img/services/network.png',
-        title: 'Networking Engineering',
-        description: 'We understand the importance of networking and can help you establish a reliable and secure network.',
-        color: 'blue',
+        icon: "assets/img/services/network.png",
+        title: "Networking Engineering",
+        description: "We understand the importance of networking and can help you establish a reliable and secure network.",
+        color: "blue",
         delay: 400
       },
       {
         id: 4,
-        icon: 'assets/img/services/training.png',
-        title: 'Training',
-        description: 'Our career training turn ambitions into job-ready skills.',
-        color: 'dark-blue',
+        icon: "assets/img/services/training.png",
+        title: "Training",
+        description: "Our career training turn ambitions into job-ready skills.",
+        color: "dark-blue",
         delay: 500
       },
       {
         id: 5,
-        icon: 'assets/img/services/web-development.jpg',
-        title: 'Web Development',
-        description: 'Web development services help create all types of web software and ensure a great experience for web users.',
-        color: 'blue',
+        icon: "assets/img/services/web-development.jpg",
+        title: "Web Development",
+        description: "Web development services help create all types of web software and ensure a great experience for web users.",
+        color: "blue",
         delay: 600
       },
       {
         id: 6,
-        icon: 'assets/img/services/application.jpg',
-        title: 'Application Development',
-        description: 'We offer a wide range of personalized services in applications',
-        color: 'dark-blue',
+        icon: "assets/img/services/application.jpg",
+        title: "Application Development",
+        description: "We offer a wide range of personalized services in applications",
+        color: "dark-blue",
         delay: 700
       },
       {
         id: 7,
-        icon: 'assets/img/services/AI.jpg',
-        title: 'Artificial Intelligence',
-        description: 'We offer AI consulting services and solutions that will help you achieve your business goals faster.',
-        color: 'blue',
+        icon: "assets/img/services/AI.jpg",
+        title: "Artificial Intelligence",
+        description: "We offer AI consulting services and solutions that will help you achieve your business goals faster.",
+        color: "blue",
         delay: 800
       },
       {
         id: 8,
-        icon: 'assets/img/services/manage_services.jpg',
-        title: 'Managed Services (NOC & SOC)',
-        description: 'Our experts are well-versed in customer networking and security needs.',
-        color: 'dark-blue',
+        icon: "assets/img/services/manage_services.jpg",
+        title: "Managed Services (NOC & SOC)",
+        description: "Our experts are well-versed in customer networking and security needs.",
+        color: "dark-blue",
         delay: 900
       }
     ]
   };
   aboutContent: { title: string, description: { text: string }[], imageUrl: string } =  {
-    title: 'About Us',
+    title: "About Us",
     description: [
       { 
         text:  `
@@ -113,8 +113,8 @@ export class HomeComponent {
     title: string,
     description: string,
     testimonials: { stars: number; comment: string; imageUrl: string; name: string; position?: string }[] } =  {
-    title: 'What people say about us!',
-    description: 'Our Happy Clients',
+    title: "What people say about us!",
+    description: "Our Happy Clients",
     testimonials: [
       {
         stars: 3,

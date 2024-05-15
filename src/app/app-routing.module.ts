@@ -21,10 +21,10 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
                 path: '', component: MainComponent,
                 children: [
                     {path: '', component: HomeComponent},
-                    {path: 'about/:id?', component: AboutComponent},
+                    {path: 'about/:id', component: AboutComponent},
                     {path: 'contact', component: ContactComponent},
                     {path: 'career', component: CareerComponent},
-                    {path: 'service/:id?', component: WhatwedoComponent}
+                    {path: 'service/:id', component: WhatwedoComponent}
                 ]
             },
             {

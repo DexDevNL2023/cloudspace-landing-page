@@ -14,7 +14,7 @@ export class AboutService {
 
   getAboutById(id: number): Observable<any> {
     // Inclure l'ID dans l'URL de l'API
-    const url = `${this.apiUrl}${id}`;
+    const url = this.apiUrl + '/' + id;
     return this.http.get<any>(url);
   }
 }
