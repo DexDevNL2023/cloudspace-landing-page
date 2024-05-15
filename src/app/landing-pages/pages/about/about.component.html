@@ -5,7 +5,8 @@
     <section id="about" class="about">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row gx-0">
-                <div class="col-lg-6 d-flex flex-column justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 d-flex flex-column justify-content-center aos-init aos-animate" data-aos="fade-up"
+                    data-aos-delay="200">
                     <div class="content">
                         <h2>{{ aboutContent.title }}</h2>
                         <p *ngFor="let item of aboutContent.description">{{ item.text }}</p>
@@ -18,7 +19,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="about-img" class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+                <div id="about-img" class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out"
+                    data-aos-delay="200">
                     <img [src]="aboutContent.imageUrl" class="img-fluid" alt="">
                 </div>
             </div>
