@@ -38,7 +38,7 @@ export class CareerComponent {
     },
     {
       title: "Cyber Security Engineer",
-      description: "CloudSpace is seeking a Cyber Security Engineer (Cyber Defense Infrastructure Support) for our customer site in Washington, DC.",
+      description: "InfoSys technology Consulting is seeking a Cyber Security Engineer (Cyber Defense Infrastructure Support) for our customer site in Washington, DC.",
       location: "Washington, DC",
       responsibilities: [
         "Design, development, integration, implementation, operation and analysis of cyber security technologies.",

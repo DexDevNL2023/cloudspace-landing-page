@@ -17,7 +17,7 @@ export class AboutComponent {
     title: "Who We Are",
     description: [
       { 
-        text: `CloudSpace Consulting is passionate to find the right technology solution for your projects or product development. Understanding the importance of approaching a project with the right resources and tools can bring success for the most complicated project.`
+        text: `InfoSys technology Consulting is passionate to find the right technology solution for your projects or product development. Understanding the importance of approaching a project with the right resources and tools can bring success for the most complicated project.`
       },
       { 
         text: `We are client focused and result-oriented. We thrive for quality and ensure the best possible results. From small sized technology solution to delivering big projects, CloudSpace Consulting is equipped with the skills and experiences that streamline the process of delivery and outcome.`

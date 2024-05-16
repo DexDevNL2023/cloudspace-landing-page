@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   heroContent: { title: string, spanText?: string, description?: string, buttonText?: string, buttonLink?: string } = {
-    title: "Empowered by",
-    spanText: "Innovation",
+    title: "InfoSys technology Consulting",
+    spanText: "Empowered by Innovation",
     description: "Process efficiency, cost reductions, and increased time to market – for business growth, cloud adoption is a non-negotiable.",
     buttonText: "Get Started",
     buttonLink: "about"
@@ -94,7 +94,7 @@ export class HomeComponent {
     description: [
       { 
         text:  `
-          CloudSpace Consulting is passionate about finding the right technological solution for your projects
+        InfoSys technology Consulting - Cloud Transformation | Cyber Security | IT Training |  Web & Apps Development | Networking | Artificial Intelligence | NOC & SOC is passionate about finding the right technological solution for your projects
           or product development. Understanding the importance of approaching a project with the appropriate
           resources and tools can ensure the success of even the most complicated project.
         ` 
@@ -102,7 +102,7 @@ export class HomeComponent {
       { 
         text: `
           We are customer and results focused. We aim for quality and guarantee the best possible results. Whether
-          dealing with a small technology solution or delivering large projects, CloudSpace Consulting has the
+          dealing with a small technology solution or delivering large projects, InfoSys technology Consulting has the
           skills and experiences that streamline the delivery process and results.
         `
       }
@@ -124,14 +124,14 @@ export class HomeComponent {
       },
       {
         stars: 5,
-        comment: "As a tech startup, we initially managed all of our office IT in-house. As we grew, we wanted to spend more and more of our time on our technology and product and CloudSpace has allowed us to do that. They've scaled with us and successfully managed the technical portion. They're always prompt and willing to go the extra mile and we're looking forward to continued growth with CloudSpace in the future!",
+        comment: "As a tech startup, we initially managed all of our office IT in-house. As we grew, we wanted to spend more and more of our time on our technology and product and CloudSpace has allowed us to do that. They've scaled with us and successfully managed the technical portion. They're always prompt and willing to go the extra mile and we're looking forward to continued growth with InfoSys technology Consulting in the future!",
         imageUrl: "assets/img/testimonials/testimonials-1.jpg",
         name: "Zaman Mo",
         position: "Ops Manager WWK"
       },
       {
         stars: 1,
-        comment: "It was a pleasure to work with CloudSpace engineers. They were able to quickly understand what matters most and get us focused on finding the best solution. The combination of their real-world startup experience and empathetic listening skills make them a truly unique team.",
+        comment: "It was a pleasure to work with InfoSys technology Consulting engineers. They were able to quickly understand what matters most and get us focused on finding the best solution. The combination of their real-world startup experience and empathetic listening skills make them a truly unique team.",
         imageUrl: "assets/img/testimonials/testimonials-4.jpg",
         name: "Palmer Smith",
         position: "CTO, Frizl"

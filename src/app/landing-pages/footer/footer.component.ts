@@ -35,7 +35,7 @@ export class FooterComponent {
     address: '9994 Sowder Village, Sq #508, Manassas VA 20109',
     phone: '+1-855-200-7653',
     email: 'info@cloudspaceconsulting.com',
-    copyright: 'CloudSpace Consulting LLC © 2023'
+    copyright: 'InfoSys technology Consulting & SOC © 2023'
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] };
   dropdownVisible = false;
