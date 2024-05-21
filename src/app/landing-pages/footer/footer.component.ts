@@ -12,7 +12,7 @@ export class FooterComponent {
     interestedTitle: 'Interested in our services?',
     interestedDescription: 'Get in touch today!',
     contactButtonText: 'Contact Us',
-    logoUrl: 'assets/img/logo.jpeg',
+    logoUrl: 'assets/img/logo.png',
     usefulLinks: [
       { label: 'Home', link: '/', subMenu: [] },
       { label: 'About us', link: '/about', subMenu: [
