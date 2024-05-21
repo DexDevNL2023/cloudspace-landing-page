@@ -22,7 +22,7 @@ export class HeaderComponent {
     }[] 
   } = {
     color: '#3D72B4',
-    logoUrl: 'assets/img/logo.jpeg',
+    logoUrl: 'assets/img/logo.png',
     menuItems: [
       { label: 'Home', link: '/', subMenu: [] },
       {
