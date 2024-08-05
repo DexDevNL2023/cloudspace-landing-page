@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppComponent } from 'src/app/app.component';
+import AOS from "aos";
 
 @Component({
   selector: 'app-main',
@@ -10,6 +11,9 @@ export class MainComponent {
   isBannerVisible = true;
 
   constructor(private router: Router, public appMain: AppComponent) {
+  }
+  ngOninit():void{
+    AOS.init();
   }
 
   closeBanner(): void {

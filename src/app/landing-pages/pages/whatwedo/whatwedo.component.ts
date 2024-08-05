@@ -10,8 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 export class WhatwedoComponent {
 
   heroContent: { title: string, spanText?: string, description?: string, buttonText?: string, buttonLink?: string } = {
-    title: "What we",
-    spanText: "do"
+    title: "What are we",
+    spanText: "in"
   };
   whatwedoContent: { title: string, description: { text: string }[], imageUrl: string, sections: { title: string, description: string, subSections: { imgSrc: string, title: string, description?: string }[] }[] } = { 
     title: "What web solution do you need?", 

@@ -2,7 +2,7 @@ import { MessageService } from 'primeng/api';
 import { MainComponent } from '../../main/main.component';
 import { ContactService } from './../../../utilities/services/contact.service';
 import { Component } from '@angular/core';
-
+import AOS from "aos";
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html'
@@ -31,6 +31,7 @@ export class ContactComponent {
 
   ngOnInit(): void {
     this.loadContacts();
+    AOS.init();
   }
 
   loadContacts() {
