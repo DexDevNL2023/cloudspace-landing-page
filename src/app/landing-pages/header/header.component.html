@@ -1,0 +1,26 @@
+<header id="header" class="header fixed-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="{{ headerContent.logoUrl }}" alt="">
+    </a>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li *ngFor="let menuItem of headerContent.menuItems" class="dropdown">
+          <a *ngIf="menuItem.subMenu.length === 0" (click)="appMain.navigateToUsefulLinks(menuItem.link)" class="nav-link cursor-pointer">{{ menuItem.label }}</a>
+          <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)" (mouseenter)="toggleDropdown(menuItem)" class="nav-link cursor-pointer">{{ menuItem.label }}  <i class="pi pi-chevron-down"></i></a>
+          <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected" class="dropdown-active">
+            <li *ngFor="let subItem of menuItemSelected.subMenu">
+              <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{ subItem.label }}</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="getstarted nav-link cursor-pointer" (click)="appMain.navigateToContact()">Contacts</a></li>
+      </ul>
+      <!-- Bouton mopile-nav-toggle -->
+      <button class="mobile-nav-toggle cursor-pointer block lg:hidden p-button p-button-icon-only p-button-rounded p-button-text">
+        <i class="pi pi-bars align-items-center justify-content-between"></i>
+      </button>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->

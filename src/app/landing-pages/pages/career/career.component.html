@@ -1,0 +1,64 @@
+<app-herosub [heroContent]="heroContent"></app-herosub>
+
+<main id="main">
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <header class="section-header">
+                <p>Carrières</p>
+                <div class="text-gray-600 line-height-3 mb-6">{{ heroContent.description }}</div>
+            </header>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <!-- F.A.Q List 1-->
+                    <div class="accordion accordion-flush" id="faqlist1">
+                        <div class="accordion-item" *ngFor="let career of careerContent; let i = index">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    [attr.data-bs-target]="'#faq-content-' + i">
+                                    {{ career.title }}
+                                </button>
+                            </h2>
+                            <div [id]="'faq-content-' + i" class="accordion-collapse collapse"
+                                data-bs-parent="#faqlist1">
+                                <div class="accordion-body">
+                                    <h3 class="pt-3">{{ career.title }}</h3>
+                                    <p><strong>Location:</strong> {{ career.location }}</p>
+                                    <p>{{ career.description }}</p>
+                                    <h3>Detailed Responsibilities</h3>
+                                    <ul>
+                                        <li *ngFor="let responsibility of career.responsibilities">{{ responsibility }}
+                                        </li>
+                                    </ul>
+                                    <h3>Required Technical Skills</h3>
+                                    <ul>
+                                        <li *ngFor="let qualification of career.qualifications">{{ qualification }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End F.A.Q Section -->
+
+    <div class="border-1 border-round surface-border p-5 surface-50 flex flex-column align-items-center">
+        <div class="flex justify-content-center">
+            <p-avatarGroup styleClass="mb-3">
+                <p-avatar *ngFor="let avatar of avatars" [image]="avatar" size="large" shape="circle"></p-avatar>
+                <p-avatar label="+2" shape="circle" size="large"
+                    [style]="{ 'background-color': '#9c27b0', color: '#ffffff' }"></p-avatar>
+            </p-avatarGroup>
+        </div>
+        <div class="font-medium text-xl mt-5 mb-3">Vous avez encore des questions ?</div>
+        <p class="text-700 line-height-3 mt-0 mb-5">
+            Si vous avez besoin de plus d'informations ou si vous souhaitez discuter avec notre équipe, n'hésitez pas à nous contacter. Nous sommes là pour vous aider et répondre à toutes vos questions.
+        </p>
+        <button (click)="appMain.navigateToContact()" pbutton="" pripple="" label="Contactez-nous" icon="pi pi-send"
+            class="p-element p-ripple p-button-help p-button p-component">
+            <span class="p-button-icon p-button-icon-left pi pi-send" aria-hidden="true"></span>
+            <span class="p-button-label">Contactez-nous</span><span class="p-ink"></span>
+        </button>
+    </div>
+</main><!-- End #main -->

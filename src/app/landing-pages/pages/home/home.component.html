@@ -1,0 +1,89 @@
+
+<!-- ======= Hero Section ======= -->
+<app-hero [heroContent]="heroContent"></app-hero>
+
+<main id="main">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <header class="section-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <p>{{ servicesContent.title }}</p>
+                            <h6 class="py-3">{{ servicesContent.description }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </header>
+ 
+            <div class="row gy-4">
+                <div *ngFor="let service of servicesContent.services" class="col-lg-4 col-md-6 aos-init aos-animate"
+                    data-aos="fade-up" [attr.data-aos-delay]="service.delay">
+                    <div class="service-box {{ service.color }}">
+                        <div><img [src]="service.icon" alt="" class="service-icon"></div>
+                        <h3>{{ service.title }}</h3>
+                        <p>{{ service.description }}</p>
+                        <a (click)="appMain.navigateToWhatWeDo('/service', service.id)" class="read-more cursor-pointer">
+                            <span>En savoir plus</span>
+                            <i class="pi pi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <!-- Utilisez les données récupérées pour afficher les informations à propos -->
+            <div class="row gx-0">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div class="content">
+                        <h2>{{ aboutContent.title }}</h2>
+                        <p *ngFor="let item of aboutContent.description">{{ item.text }}</p>
+                        <div class="text-center text-lg-start">
+                            <a (click)="appMain.scrollTo('services')"
+                                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
+                                <span>En savoir plus</span>
+                                <i class="pi pi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <img [src]="aboutContent.imageUrl" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <header class="section-header">
+                <h2>{{ testimonialsContent.title }}</h2>
+                <p>{{ testimonialsContent.description }}</p>
+            </header>
+            
+            <p-carousel [value]="testimonialsContent.testimonials" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="6000">
+                <ng-template let-testimonial pTemplate="testimonial">
+                    <div class="testimonial-item">
+                        <div class="stars">
+                            <i class="pi pi-star-fill" *ngFor="let star of getStarsArray(testimonial.stars)"></i>
+                        </div>
+                        <p>{{ testimonial.comment }}</p>
+                        <div class="profile mt-auto">
+                            <img [src]="testimonial.imageUrl" class="testimonial-img" alt="">
+                            <h3>{{ testimonial.name }}</h3>
+                            <h4 *ngIf="testimonial.position">{{ testimonial.position }}</h4>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>            
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+</main><!-- End #main -->

@@ -1,0 +1,55 @@
+<app-herosub [heroContent]="heroContent"></app-herosub>
+
+<main id="main">
+    <!-- ======= About Section ======= -->
+    <section class="about">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row gx-0">
+                <div class="col-lg-6 d-flex flex-column justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content">
+                        <h2>{{ whatwedoContent.title }}</h2>
+                        <p *ngFor="let item of whatwedoContent.description">{{ item.text }}</p>
+                        <div class="text-center text-lg-start">
+                            <a (click)="appMain.navigateToContact()"
+                                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
+                                <span>Contactez-nous</span>
+                                <i class="pi pi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="about-img" class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+                    <img [src]="whatwedoContent.imageUrl" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div> 
+    </section><!-- End About Section -->
+
+    <!-- ======= Start Section ======= -->
+    <section class="services">
+        <!-- Pour chaque section, utilisez *ngFor pour itérer sur le tableau de sections -->
+        <div *ngFor="let section of whatwedoContent.sections" class="container aos-init aos-animate py-4" data-aos="fade-up">
+            <header class="section-header mb-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <!-- Utilisez les données de chaque section pour afficher le titre et la description -->
+                            <p>{{ section.title }}</p>
+                            <h6 class="py-3">{{ section.description }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="row">
+                <!-- Pour chaque élément de la section, utilisez *ngFor pour itérer sur les éléments -->
+                <div *ngFor="let subSection of section.subSections" class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-box  {{ subSection.color }}">
+                        <div><img [src]="subSection.imgSrc" alt="" class="service-icon"></div>
+                        <h3>{{ subSection.title }}</h3>
+                        <p>{{ subSection.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main><!-- End #main -->

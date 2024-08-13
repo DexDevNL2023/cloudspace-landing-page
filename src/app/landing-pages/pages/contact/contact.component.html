@@ -1,0 +1,64 @@
+<app-herosub [heroContent]="heroContent"></app-herosub>
+
+<main id="main">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row gx-0 grid-nogutter">
+                <!-- Colonne de gauche avec l'image et les informations de contact -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center bg-no-repeat bg-cover p-8"
+                    style="background-image: url('assets/img/blocks/contacts/contact-2.jpg');">
+                    <div class="text-white text-2xl font-medium mb-6">{{ contactContent.title }}</div>
+                    <div class="text-gray-300 line-height-3 mb-6">{{ contactContent.description }}</div>
+                    <ul class="list-none p-0 m-0 mt-6 text-white">
+                        <li class="flex align-items-center mb-3" *ngFor="let contact of contactContent.contacts">
+                            <i [ngClass]="contact.icon + ' mr-2'"></i>
+                            <span>{{ contact.info }}</span>
+                        </li>
+                    </ul>
+                    <a class="inline-flex align-items-center text-blue-300 font-bold no-underline cursor-pointer"
+                        [href]="heroContent.buttonLink">
+                        <span class="mr-3">{{ heroContent.buttonText }}</span>
+                        <i class="pi pi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Colonne de droite avec le formulaire de contact -->
+                <div class="col-lg-6 align-items-center">
+                    <p-toast></p-toast>
+                    <div class="text-black-700 text-2xl font-medium mb-6 px-4 md:px-6 lg:px-8">Décrivez-nous votre besoin :</div>
+                    <div class="p-fluid formgrid grid px-4 md:px-6 lg:px-8">
+                        <div class="field col-12 lg:col-6 mb-4">
+                            <input id="firstname" type="text" pInputText placeholder="First Name"
+                                class="p-inputtext p-component p-element py-3 px-2 text-lg" [(ngModel)]="firstname">
+                        </div>
+                        <div class="field col-12 lg:col-6 mb-4">
+                            <input id="lastname" type="text" pInputText placeholder="Last Name"
+                                class="p-inputtext p-component p-element py-3 px-2 text-lg" [(ngModel)]="lastname">
+                        </div>
+                        <div class="field col-12 mb-4">
+                            <input id="email" type="text" pInputText placeholder="Email"
+                                class="p-inputtext p-component p-element py-3 px-2 text-lg" [(ngModel)]="email">
+                        </div>
+                        <div class="field col-12 mb-4">
+                            <input id="phone" type="text" pInputText placeholder="Phone"
+                                class="p-inputtext p-component p-element py-3 px-2 text-lg" [(ngModel)]="phone">
+                        </div>
+                        <div class="field col-12 mb-4">
+                            <textarea id="message" pInputTextarea rows="3" placeholder="Message"
+                                class="p-inputtextarea p-inputtext p-component p-element py-3 px-2 text-lg p-inputtextarea-resizable"
+                                style="height: 104px; overflow: hidden;" [(ngModel)]="message"></textarea>
+                        </div>
+                        <div class="col-12 text-right">
+                            <button type="button" pButton class="p-element p-ripple px-5 py-3 w-auto p-button p-component"
+                                (click)="sendMessage()">
+                                <span class="p-button-icon p-button-icon-left pi pi-envelope" aria-hidden="true"></span>
+                                <span class="p-button-label">Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+</main><!-- End #main -->
