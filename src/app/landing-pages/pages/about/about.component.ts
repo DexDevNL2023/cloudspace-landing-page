@@ -8,29 +8,26 @@ import AOS from "aos";
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
-
   heroContent = { 
-    title: "À propos",
-    spanText: "de nous",
+    title: "About",
+    spanText: "Us",
     backgroundImage: 'assets/img/banners/banner-about.jpg'
   };
-  
-  aboutContent: { title: string, description: { text: string }[], imageUrl: string } = {
-    title: "Notre vision",
+aboutContent = {
+    title: "Our Vision",
     description: [
-      { 
-        text: `InfoSys Consulting est une entreprise camerounaise basée aux États-Unis, spécialisée dans la fourniture de solutions technologiques innovantes pour aider nos clients à atteindre leurs objectifs. Nous sommes fiers de nos racines et de notre engagement à offrir des services de haute qualité adaptés aux besoins uniques de chaque client.`
-      },
-      { 
-        text: `Notre expertise couvre plusieurs domaines essentiels : développement web, services cloud, réseaux et sécurité, ainsi que la gestion de projets informatiques. Que vous soyez une petite entreprise cherchant à établir votre présence en ligne ou une grande organisation nécessitant une infrastructure cloud sécurisée, nous avons les compétences et l'expérience nécessaires pour vous accompagner.`
-      },
-      { 
-        text: `Chez InfoSys Consulting, nous nous efforçons de rester à la pointe de la technologie pour offrir des solutions durables et innovantes. Notre équipe dévouée travaille main dans la main avec vous pour s'assurer que chaque projet est mené à bien, dans le respect des délais et du budget.`
-      }
+        { 
+            text: `InfoSys Consulting is a Cameroonian company based in the United States, specializing in providing innovative technological solutions to help our clients achieve their goals. We take pride in our roots and our commitment to delivering high-quality services tailored to the unique needs of each client.`
+        },
+        { 
+            text: `Our expertise spans several key areas: web development, cloud services, network and security, as well as IT project management. Whether you are a small business looking to establish your online presence or a large organization in need of a secure cloud infrastructure, we have the skills and experience to support you.`
+        },
+        { 
+            text: `At InfoSys Consulting, we strive to stay at the forefront of technology to deliver sustainable and innovative solutions. Our dedicated team works closely with you to ensure that every project is completed successfully, on time, and within budget.`
+        }
     ],
     imageUrl: "assets/img/banners/infosys-consulting-offices-timisoara-1.jpg"
   };
-  
   aboutId: number;
 
   constructor(public appMain: MainComponent) { }

@@ -31,12 +31,18 @@
                     <h4>Liens utiles</h4>
                     <ul>
                         <li *ngFor="let menuItem of footerContent.usefulLinks">
-                            <a *ngIf="menuItem.subMenu.length === 0" (click)="appMain.navigateToUsefulLinks(menuItem.link)" class="nav-link cursor-pointer">{{ menuItem.label }}</a>
-                            <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)" class="nav-link cursor-pointer">{{ menuItem.label }}  <i class="pi pi-chevron-right"></i></a>
+                            <a *ngIf="menuItem.subMenu.length === 0"
+                                (click)="appMain.navigateToUsefulLinks(menuItem.link)"
+                                class="nav-link cursor-pointer">{{ menuItem.label }}</a>
+                            <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)"
+                                class="nav-link cursor-pointer">{{ menuItem.label }} <i
+                                    class="pi pi-chevron-right"></i></a>
                             <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected">
-                              <li *ngFor="let subItem of menuItemSelected.subMenu">
-                                <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{ subItem.label }}</a>
-                              </li>
+                                <li *ngFor="let subItem of menuItemSelected.subMenu">
+                                    <a class="nav-link cursor-pointer"
+                                        (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{ subItem.label
+                                        }}</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -46,17 +52,19 @@
                     <h4>Ce que nous faisons</h4>
                     <ul>
                         <li *ngFor="let menuItem of footerContent.whatWeDo">
-                            <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(menuItem.link, menuItem.id)">{{ menuItem.label }}</a>
+                            <a class="nav-link cursor-pointer"
+                                (click)="appMain.navigateToWhatWeDo(menuItem.link, menuItem.id)">{{ menuItem.label
+                                }}</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Contactez-nous</h4>
+                    <h4>Contact Us</h4>
                     <p>
-                        <strong>Adresse :</strong> {{ footerContent.address }} <br><br>
-                        <strong>Téléphone :</strong> {{ footerContent.phone }}<br>
-                        <strong>Email :</strong> {{ footerContent.email }}<br>
+                        <strong>Address:</strong> {{ footerContent.address }} <br><br>
+                        <strong>Phone:</strong> {{ footerContent.phone }}<br>
+                        <strong>Email:</strong> {{ footerContent.email }}<br>
                     </p>
                 </div>
             </div>

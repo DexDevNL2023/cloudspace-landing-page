@@ -498,7 +498,7 @@ section {
 .hero-waves {
   display: block;
   width: 100%;
-  height: 30px;
+  height: 60px;
   position: absolute;
   bottom: 0;
 }

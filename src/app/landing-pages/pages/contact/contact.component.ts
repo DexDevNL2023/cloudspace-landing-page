@@ -9,38 +9,35 @@ import { EmailService } from '../../../utilities/services/email.service';
   templateUrl: './contact.component.html'
 })
 export class ContactComponent {
-
   heroContent = {
-    title: "Nous sommes là",
-    spanText: "pour vous aider",
-    description: "Vous avez des questions ou besoin d'assistance ? N'hésitez pas à nous contacter pour obtenir des réponses rapides et précises. Nous sommes à votre écoute pour vous offrir le meilleur service possible.",
+    title: "We are here",
+    spanText: "to help you",
+    description: "Do you have questions or need assistance? Don't hesitate to contact us for quick and accurate responses. We are here to provide you with the best possible service.",
     buttonText: "InfoSys Consulting",
     buttonLink: "",
     backgroundImage: 'assets/img/banners/banner-contact.jpg'
   };
-  
   contactContent = {
-    title: "Prenez Contact",
-    description: "Nous serions ravis de répondre à toutes vos questions et de discuter de vos besoins. Voici comment vous pouvez nous joindre :",
+    title: "Get in Touch",
+    description: "We would be happy to answer any questions and discuss your needs. Here’s how you can reach us:",
     contacts: [
-      { 
-        icon: "pi pi-map-marker", 
-        label: "Adresse", 
-        info: "9994 Sowder Village Sq #508, Manassas VA 20109 USA" 
+      {
+        icon: "pi pi-map-marker",
+        label: "Address",
+        info: "462 Vandegrift Road, Stafford VA 22554"
       },
-      { 
-        icon: "pi pi-phone", 
-        label: "Appelez-Nous", 
-        info: "+1-855-200-7653" 
+      {
+        icon: "pi pi-phone",
+        label: "Call Us",
+        info: "(001) 571-572-2578"
       },
-      { 
-        icon: "pi pi-envelope", 
-        label: "Envoyez-Nous un Email", 
-        info: "info@infosysconsulting.com" 
+      {
+        icon: "pi pi-envelope",
+        label: "Send Us an Email",
+        info: "info@infosys.com"
       }
     ]
-  };
-
+  };  
   lastname: string = '';
   firstname: string = '';
   email: string = '';

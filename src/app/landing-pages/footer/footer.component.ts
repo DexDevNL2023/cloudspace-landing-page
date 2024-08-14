@@ -9,28 +9,28 @@ import AOS from "aos";
 export class FooterComponent {
   footerContent = {
     color: '#3D72B4',
-    interestedTitle: 'Intéressé par nos services ?',
-    interestedDescription: 'Contactez-nous dès aujourd\'hui !',
-    contactButtonText: 'Contactez-nous',
+    interestedTitle: 'Interested in our services?',
+    interestedDescription: 'Contact us today!',
+    contactButtonText: 'Contact Us',
     logoUrl: 'assets/img/logo.png',
     usefulLinks: [
-      { label: 'Accueil', link: '/', subMenu: [] },
-      { label: 'Qui sommes-nous', link: '/about', subMenu: [] },
-      { label: 'Carrières', link: '/career', subMenu: [] },
-      { label: 'Contacts', link: '/contact', subMenu: [] }
+        { label: 'Home', link: '/', subMenu: [] },
+        { label: 'About Us', link: '/about', subMenu: [] },
+        { label: 'Careers', link: '/career', subMenu: [] },
+        { label: 'Contact', link: '/contact', subMenu: [] }
     ],
     whatWeDo: [
-      { id: 1, label: 'Transformation Cloud', link: '/service' },
-      { id: 2, label: 'Cybersécurité', link: '/service' },
-      { id: 3, label: 'Ingénierie Réseau', link: '/service' },
-      { id: 4, label: 'Formation', link: '/service' },
-      { id: 5, label: 'Développement Web', link: '/service' },
-      { id: 6, label: 'Développement d\'Applications', link: '/service' },
-      { id: 7, label: 'Intelligence Artificielle', link: '/service' }
+        { id: 1, label: 'Cloud Transformation', link: '/service' },
+        { id: 2, label: 'Cybersecurity', link: '/service' },
+        { id: 3, label: 'Network Engineering', link: '/service' },
+        { id: 4, label: 'Training', link: '/service' },
+        { id: 5, label: 'Web Development', link: '/service' },
+        { id: 6, label: 'Application Development', link: '/service' },
+        { id: 7, label: 'Artificial Intelligence', link: '/service' }
     ],
-    address: '9994 Sowder Village, Sq #508, Manassas VA 20109',
-    phone: '+1-855-200-7653',
-    email: 'info@cloudspaceconsulting.com',
+    address: '462 Vandegrift Road,  Stafford VA 22554',
+    phone: '(001) 571-572-2578',
+    email: 'info@infosys.com',
     copyright: 'IT-Consulting Teleo © 2023'
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] };

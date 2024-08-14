@@ -9,282 +9,243 @@ import AOS from "aos";
 })
 export class WhatwedoComponent {
   heroContent = {
-    title: "Nos Services",
-    spanText: "de qualité",
-    description: "Découvrez comment nos services peuvent transformer votre entreprise. Nous nous engageons à fournir des solutions innovantes et adaptées à vos besoins spécifiques.",
-    buttonText: "En savoir plus",
+    title: "Our Services",
+    spanText: "of Quality",
+    description: "Discover how our services can transform your business. We are committed to providing innovative solutions tailored to your specific needs.",
+    buttonText: "Learn more",
     buttonLink: "/services",
     backgroundImage: ''
   };
-
   whatwedoContents = [
     {
       id: 1,
-      title: "Que peut faire l'informatique en nuage pour vous ?",
+      title: "What Can Cloud Computing Do for You?",
       description: [
         {
-          text: `Nos services d'informatique en nuage aident les entreprises à passer sans heurts aux plateformes cloud, garantissant évolutivité et efficacité.`
+          text: "Our cloud computing services help businesses transition smoothly to cloud platforms, ensuring scalability and efficiency."
         },
         {
-          text: `De la stratégie cloud au déploiement, nous personnalisons des solutions qui s'alignent sur vos objectifs commerciaux et vos besoins en matière de sécurité.`
+          text: "From cloud strategy to deployment, we customize solutions that align with your business goals and security needs."
         }
       ],
       imageUrl: "assets/img/services/cloud_transformation.webp",
       sections: [
         {
-          title: "Technologie",
-          description: "Nous exploitons des technologies cloud avancées pour améliorer la vitesse, la sécurité et l'efficacité de votre infrastructure.",
+          title: "Technology",
+          description: "We leverage advanced cloud technologies to enhance the speed, security, and efficiency of your infrastructure.",
           subSections: [
-            { imgSrc: "assets/img/services/cloud_architecture.webp", title: "Architecture Cloud", description: "Conception d'infrastructures cloud robustes et évolutives.", color: "blue" },
-            { imgSrc: "assets/img/services/cloud_automation.png", title: "Automatisation Cloud", description: "Automatisation des processus cloud pour améliorer l'efficacité.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/cloud_architecture.webp", title: "Cloud Architecture", description: "Designing robust and scalable cloud infrastructures.", color: "blue" },
+            { imgSrc: "assets/img/services/cloud_automation.png", title: "DevOps", description: "Implementing DevOps practices to streamline development and operations, ensuring faster delivery and continuous improvement.", color: "dark-blue" }            
           ]
         },
         {
           title: "Services",
-          description: "Nos services cloud couvrent tout, de la stratégie initiale à la gestion et à l'optimisation continues.",
+          description: "Our cloud services cover everything from initial strategy to ongoing management and optimization.",
           subSections: [
-            { imgSrc: "assets/img/services/cloud_migration.jpg", title: "Migration Cloud", description: "Migration transparente de données et d'applications vers le cloud.", color: "blue" },
-            { imgSrc: "assets/img/services/cloud_management.jpg", title: "Gestion du Cloud", description: "Gestion complète des environnements cloud.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/cloud_migration.jpg", title: "Cloud Migration", description: "Seamless migration of data and applications to the cloud.", color: "blue" },
+            { imgSrc: "assets/img/services/cloud_management.jpg", title: "Cloud Management", description: "Comprehensive management of cloud environments.", color: "dark-blue" }
           ]
         },
         {
-          title: "Partenaires",
-          description: "Nous collaborons avec des fournisseurs de services cloud leaders pour offrir les meilleures solutions adaptées à vos besoins.",
+          title: "Partners",
+          description: "We collaborate with leading cloud service providers to deliver the best solutions tailored to your needs.",
           subSections: [
-            { imgSrc: "assets/img/services/cloud_partners.webp", title: "Partenariats Cloud", description: "Exploiter les partenariats pour des solutions cloud améliorées.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/cloud_partners.webp", title: "Cloud Partnerships", description: "Leveraging partnerships for enhanced cloud solutions.", color: "dark-blue" }
           ]
         }
       ]
     },
     {
       id: 2,
-      title: "Comment protégeons-nous vos données avec la cybersécurité ?",
+      title: "How Do We Protect Your Data with Cybersecurity?",
       description: [
         {
-          text: `Nos services de cybersécurité protègent votre entreprise avec des solutions de sécurité de pointe conçues pour se défendre contre les menaces évolutives.`
+          text: "Our cybersecurity services safeguard your business with cutting-edge security solutions designed to defend against evolving threats."
         },
         {
-          text: `Nous intégrons des mesures de sécurité dans tous les aspects de votre entreprise pour garantir une protection robuste.`
+          text: "We integrate security measures into every aspect of your business to ensure robust protection."
         }
       ],
       imageUrl: "assets/img/services/cyber_security.png",
       sections: [
         {
-          title: "Technologie",
-          description: "Nos technologies de sécurité protègent vos actifs numériques contre une variété de menaces.",
+          title: "Technology",
+          description: "Our security technologies protect your digital assets from a variety of threats.",
           subSections: [
-            { imgSrc: "assets/img/services/security_architecture.png", title: "Architecture de Sécurité", description: "Conception de systèmes et de réseaux sécurisés.", color: "blue" },
-            { imgSrc: "assets/img/services/threat_detection.png", title: "Détection des Menaces", description: "Identifier et neutraliser rapidement les menaces.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/security_architecture.png", title: "Security Architecture", description: "Designing secure systems and networks.", color: "blue" },
+            { imgSrc: "assets/img/services/threat_detection.png", title: "Threat Detection", description: "Quickly identifying and neutralizing threats.", color: "dark-blue" }
           ]
         },
         {
           title: "Services",
-          description: "Nous fournissons une gamme de services de cybersécurité pour protéger votre organisation à tous les niveaux.",
+          description: "We provide a range of cybersecurity services to protect your organization at every level.",
           subSections: [
-            { imgSrc: "assets/img/services/incident_response.png", title: "Réponse aux Incidents", description: "Réponse rapide aux violations de sécurité.", color: "blue" },
-            { imgSrc: "assets/img/services/security_assessment.png", title: "Évaluation de la Sécurité", description: "Évaluation complète de la posture de sécurité.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/incident_response.png", title: "Incident Response", description: "Rapid response to security breaches.", color: "blue" },
+            { imgSrc: "assets/img/services/security_assessment.png", title: "Security Assessment", description: "Comprehensive evaluation of your security posture.", color: "dark-blue" }
           ]
         },
         {
-          title: "Partenaires",
-          description: "Collaborer avec des fournisseurs de sécurité de premier plan pour renforcer vos défenses.",
+          title: "Partners",
+          description: "Partnering with leading security providers to strengthen your defenses.",
           subSections: [
-            { imgSrc: "assets/img/services/security_partners.png", title: "Partenaires de Sécurité", description: "Exploiter les partenariats pour des solutions de sécurité améliorées.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/security_partners.png", title: "Security Partnerships", description: "Leveraging partnerships for enhanced security solutions.", color: "dark-blue" }
           ]
         }
       ]
     },
     {
       id: 3,
-      title: "Ingénierie le futur des solutions réseau",
+      title: "Engineering the Future of Network Solutions",
       description: [
         {
-          text: `Nos services d'ingénierie réseau garantissent que votre entreprise dispose d'une infrastructure fiable et sécurisée qui soutient la croissance et l'innovation.`
+          text: "Our network engineering services ensure your business has a reliable and secure infrastructure that supports growth and innovation."
         },
         {
-          text: `Nous concevons et mettons en œuvre des solutions réseau qui maximisent les performances et la disponibilité.`
+          text: "We design and implement network solutions that maximize performance and availability."
         }
       ],
       imageUrl: "assets/img/services/network.png",
       sections: [
         {
-          title: "Technologie",
-          description: "Nous utilisons des technologies réseau de pointe pour offrir une connectivité fiable et sécurisée.",
+          title: "Technology",
+          description: "We utilize cutting-edge network technologies to deliver reliable and secure connectivity.",
           subSections: [
-            { imgSrc: "assets/img/services/network_design.png", title: "Conception Réseau", description: "Création d'architectures réseau efficaces.", color: "blue" },
-            { imgSrc: "assets/img/services/network_security.png", title: "Sécurité Réseau", description: "Protéger les réseaux contre les accès non autorisés.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/network_design.png", title: "Network Design", description: "Creating efficient network architectures.", color: "blue" },
+            { imgSrc: "assets/img/services/network_security.png", title: "Network Security", description: "Protecting networks from unauthorized access.", color: "dark-blue" }
           ]
         },
         {
           title: "Services",
-          description: "Nos services réseau englobent la conception, le déploiement et la gestion pour assurer des performances optimales.",
+          description: "Our network services encompass design, deployment, and management to ensure optimal performance.",
           subSections: [
-            { imgSrc: "assets/img/services/network_management.png", title: "Gestion du Réseau", description: "Gestion et surveillance des performances du réseau.", color: "blue" },
-            { imgSrc: "assets/img/services/network_optimization.png", title: "Optimisation du Réseau", description: "Amélioration de l'efficacité et de la vitesse du réseau.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/network_management.png", title: "Network Management", description: "Managing and monitoring network performance.", color: "blue" },
+            { imgSrc: "assets/img/services/network_optimization.png", title: "Network Optimization", description: "Improving network efficiency and speed.", color: "dark-blue" }
           ]
         },
         {
-          title: "Partenaires",
-          description: "Nous collaborons avec des fournisseurs de technologie réseau de premier plan pour offrir les meilleures solutions.",
+          title: "Partners",
+          description: "We collaborate with leading network technology providers to deliver the best solutions.",
           subSections: [
-            { imgSrc: "assets/img/services/network_partners.png", title: "Partenariats Réseau", description: "Établir des partenariats solides pour des solutions réseau supérieures.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/network_partners.png", title: "Network Partnerships", description: "Building strong partnerships for superior network solutions.", color: "dark-blue" }
           ]
         }
       ]
     },
     {
       id: 4,
-      title: "Transformez vos compétences avec nos programmes de formation",
+      title: "Transform Your Skills with Our Training Programs",
       description: [
         {
-          text: `Nos services de formation sont conçus pour doter votre équipe des compétences dont elle a besoin pour exceller dans l'environnement concurrentiel d'aujourd'hui.`
+          text: "Our training services are designed to equip your team with the skills needed to excel in today's competitive environment."
         },
         {
-          text: `Nous proposons des programmes de formation sur mesure qui comblent le fossé entre les compétences actuelles et les besoins futurs.`
+          text: "We offer customized training programs that bridge the gap between current skills and future needs."
         }
       ],
       imageUrl: "assets/img/services/training.png",
       sections: [
         {
-          title: "Technologie",
-          description: "Nos programmes de formation couvrent un large éventail de sujets technologiques pour améliorer les capacités de votre équipe.",
+          title: "Technology",
+          description: "Our training programs cover a wide range of technology topics to enhance your team's capabilities.",
           subSections: [
-            { imgSrc: "assets/img/services/tech_training.png", title: "Formation Tech", description: "Formation à jour sur les dernières technologies.", color: "blue" },
-            { imgSrc: "assets/img/services/soft_skills.png", title: "Compétences Douces", description: "Développement de compétences interpersonnelles essentielles.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/tech_training.png", title: "Tech Training", description: "Up-to-date training on the latest technologies.", color: "blue" },
+            { imgSrc: "assets/img/services/soft_skills.png", title: "Soft Skills", description: "Developing essential interpersonal skills.", color: "dark-blue" }
           ]
         },
         {
           title: "Services",
-          description: "Nous proposons une suite complète de services de formation pour répondre aux besoins de votre organisation.",
+          description: "We offer a comprehensive suite of training services to meet your organization's needs.",
           subSections: [
-            { imgSrc: "assets/img/services/corporate_training.png", title: "Formation en Entreprise", description: "Formation sur mesure pour les équipes d'entreprise.", color: "blue" },
-            { imgSrc: "assets/img/services/individual_training.png", title: "Formation Individuelle", description: "Programmes de formation personnalisés pour les individus.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/corporate_training.png", title: "Corporate Training", description: "Customized training for corporate teams.", color: "blue" },
+            { imgSrc: "assets/img/services/individual_training.png", title: "Individual Training", description: "Personalized training programs for individuals.", color: "dark-blue" }
           ]
         },
         {
-          title: "Partenaires",
-          description: "Collaborer avec des leaders de l'industrie pour offrir des solutions de formation à la pointe de la technologie.",
+          title: "Partners",
+          description: "Collaborating with industry leaders to deliver cutting-edge training solutions.",
           subSections: [
-            { imgSrc: "assets/img/services/training_partners.png", title: "Partenaires de Formation", description: "S'associer à des experts pour offrir une formation de premier ordre.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/training_partners.png", title: "Training Partnerships", description: "Partnering with experts to deliver top-notch training.", color: "dark-blue" }
           ]
         }
       ]
     },
     {
       id: 5,
-      title: "Développement web adapté à votre entreprise",
+      title: "Web Development Tailored to Your Business",
       description: [
         {
-          text: `Nos services de développement web fournissent aux entreprises des solutions web innovantes et robustes qui améliorent l'expérience utilisateur et l'engagement.`
+          text: "Our web development services provide businesses with innovative and robust web solutions that enhance user experience and engagement."
         },
         {
-          text: `Nous adaptons chaque projet pour répondre aux besoins uniques de nos clients, en assurant une fonctionnalité et une esthétique optimales.`
+          text: "We tailor each project to meet the unique needs of our clients, ensuring optimal functionality and aesthetics."
         }
       ],
       imageUrl: "assets/img/services/web-development.jpg",
       sections: [
         {
-          title: "Technologie",
-          description: "Utiliser les dernières technologies web pour construire des applications web performantes et sécurisées.",
+          title: "Technology",
+          description: "Using the latest web technologies to build high-performance, secure web applications.",
           subSections: [
-            { imgSrc: "assets/img/services/frontend_development.png", title: "Développement Frontend", description: "Création d'interfaces utilisateur engageantes.", color: "blue" },
-            { imgSrc: "assets/img/services/backend_development.png", title: "Développement Backend", description: "Construction de systèmes backend robustes.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/frontend_development.png", title: "Frontend Development", description: "Creating engaging user interfaces.", color: "blue" },
+            { imgSrc: "assets/img/services/backend_development.png", title: "Backend Development", description: "Building robust backend systems.", color: "dark-blue" }
           ]
         },
         {
           title: "Services",
-          description: "Nos services de développement web englobent la conception, le développement et l'optimisation pour des performances maximales.",
+          description: "Our web development services encompass design, development, and optimization for maximum performance.",
           subSections: [
-            { imgSrc: "assets/img/services/web_design.png", title: "Conception Web", description: "Création de designs web modernes et attrayants.", color: "blue" },
-            { imgSrc: "assets/img/services/ecommerce.png", title: "E-commerce", description: "Développement de plateformes e-commerce performantes.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/web_design.png", title: "Web Design", description: "Creating modern and attractive web designs.", color: "blue" },
+            { imgSrc: "assets/img/services/ecommerce.png", title: "E-commerce", description: "Developing high-performance e-commerce platforms.", color: "dark-blue" }
           ]
         },
         {
-          title: "Partenaires",
-          description: "Collaboration avec des leaders technologiques pour offrir des solutions web avancées.",
+          title: "Partners",
+          description: "Collaborating with technology leaders to deliver advanced web solutions.",
           subSections: [
-            { imgSrc: "assets/img/services/web_partners.png", title: "Partenaires Web", description: "Travailler avec des partenaires de premier plan pour des solutions web de qualité.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/web_partners.png", title: "Web Partnerships", description: "Working with leading partners for quality web solutions.", color: "dark-blue" }
           ]
         }
       ]
     },
     {
       id: 6,
-      title: "Développement d'Applications",
+      title: "Application Development",
       description: [
         {
-          text: `Nous offrons une gamme complète de services personnalisés pour le développement d'applications, allant de la conception à la mise en œuvre et à la maintenance.`
+          text: "Our application development services focus on creating innovative, user-friendly, and scalable applications tailored to your business needs."
         },
         {
-          text: `Nos solutions sont adaptées à vos besoins spécifiques pour garantir que vos applications répondent parfaitement à vos exigences et offrent une expérience utilisateur optimale.`
+          text: "From concept to deployment, we work closely with you to bring your vision to life."
         }
       ],
-      imageUrl: "assets/img/services/application.jpg",
+      imageUrl: "assets/img/services/app-development.jpg",
       sections: [
         {
-          title: "Technologie",
-          description: "Utilisation des dernières technologies pour créer des applications innovantes et performantes.",
+          title: "Technology",
+          description: "Utilizing the latest technologies to create powerful and efficient applications.",
           subSections: [
-            { imgSrc: "assets/img/services/mobile_development.png", title: "Développement Mobile", description: "Création d'applications mobiles pour iOS et Android.", color: "blue" },
-            { imgSrc: "assets/img/services/web_application.png", title: "Applications Web", description: "Développement d'applications web robustes et interactives.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/mobile_dev.png", title: "Mobile Development", description: "Building responsive and engaging mobile apps.", color: "blue" },
+            { imgSrc: "assets/img/services/web_dev.png", title: "Web Development", description: "Developing feature-rich web applications.", color: "dark-blue" }
           ]
         },
         {
           title: "Services",
-          description: "Des services complets pour répondre à tous vos besoins en développement d'applications.",
+          description: "Our services include end-to-end application development, from strategy and design to testing and deployment.",
           subSections: [
-            { imgSrc: "assets/img/services/app_design.png", title: "Conception d'Applications", description: "Conception intuitive et élégante pour une expérience utilisateur optimale.", color: "blue" },
-            { imgSrc: "assets/img/services/app_maintenance.png", title: "Maintenance d'Applications", description: "Support et mise à jour continue pour garantir la performance de vos applications.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/ui_ux.png", title: "UI/UX Design", description: "Crafting intuitive and visually appealing interfaces.", color: "blue" },
+            { imgSrc: "assets/img/services/qa_testing.png", title: "QA & Testing", description: "Ensuring the highest quality standards with rigorous testing.", color: "dark-blue" }
           ]
         },
         {
-          title: "Partenaires",
-          description: "Nous collaborons avec des experts pour offrir des solutions d'application de premier ordre.",
+          title: "Partners",
+          description: "Partnering with top technology providers to deliver cutting-edge applications.",
           subSections: [
-            { imgSrc: "assets/img/services/app_partners.png", title: "Partenariats en Développement", description: "Exploiter les partenariats pour des solutions d'application améliorées.", color: "dark-blue" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 7,
-      title: "Intelligence Artificielle",
-      description: [
-        {
-          text: `Nous proposons des services de conseil en intelligence artificielle (IA) pour vous aider à intégrer des solutions IA qui boostent l'efficacité et innovent vos processus métiers.`
-        },
-        {
-          text: `Nos services comprennent la mise en œuvre d'algorithmes d'apprentissage automatique, d'analytique avancée et d'autres technologies IA pour vous aider à atteindre vos objectifs plus rapidement.`
-        }
-      ],
-      imageUrl: "assets/img/services/AI.jpg",
-      sections: [
-        {
-          title: "Technologie",
-          description: "Mise en œuvre des dernières avancées en intelligence artificielle pour transformer vos processus d'affaires.",
-          subSections: [
-            { imgSrc: "assets/img/services/machine_learning.png", title: "Apprentissage Automatique", description: "Développement de modèles d'apprentissage automatique personnalisés.", color: "blue" },
-            { imgSrc: "assets/img/services/natural_language_processing.png", title: "Traitement du Langage Naturel", description: "Solutions pour comprendre et traiter le langage humain.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Services",
-          description: "Des solutions IA sur mesure pour répondre à vos besoins spécifiques.",
-          subSections: [
-            { imgSrc: "assets/img/services/ai_consulting.png", title: "Conseil en IA", description: "Conseil pour l'intégration et l'optimisation des technologies IA.", color: "blue" },
-            { imgSrc: "assets/img/services/ai_integration.png", title: "Intégration de l'IA", description: "Intégration des solutions IA dans vos systèmes existants.", color: "dark-blue" }
-          ]
-        },
-        {
-          title: "Partenaires",
-          description: "Collaboration avec des leaders de l'industrie pour offrir des solutions IA de pointe.",
-          subSections: [
-            { imgSrc: "assets/img/services/ai_partners.png", title: "Partenariats en IA", description: "Partenariats avec des experts en IA pour des solutions innovantes.", color: "dark-blue" }
+            { imgSrc: "assets/img/services/app_partners.png", title: "App Development Partnerships", description: "Collaborating with industry leaders for top-notch application solutions.", color: "dark-blue" }
           ]
         }
       ]
     }
-  ];
+  ];  
 
   whatwedoContent: any; // This will hold the specific content to display
   whatwedoId: number;

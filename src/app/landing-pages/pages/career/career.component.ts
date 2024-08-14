@@ -7,135 +7,132 @@ import AOS from "aos";
   templateUrl: './career.component.html'
 })
 export class CareerComponent {
-
   heroContent = {
-    title: "Rejoignez",
-    spanText: "notre équipe",
-    description: "Découvrez les opportunités de carrière chez InfoSys Consulting. Nous sommes à la recherche de talents passionnés pour nous aider à transformer le futur de la technologie. Explorez nos offres d'emploi et postulez pour rejoindre notre équipe innovante.",
-    buttonText: "Voir les Offres",
+    title: "Join",
+    spanText: "our team",
+    description: "Explore career opportunities at InfoSys Consulting. We are looking for passionate talents to help us shape the future of technology. Browse our job openings and apply to join our innovative team.",
+    buttonText: "View Jobs",
     buttonLink: "careers",
     backgroundImage: 'assets/img/banners/banner-carrer.jpg'
-  };  
-  
+  };
   careerContent = [
     {
-      title: "Ingénieur DevOps",
-      description: "Ce poste, sous la responsabilité du Directeur Technique (CTO), travaillera avec notre CTO et les leaders d'équipe de développement sur des projets et des pratiques DevOps.",
-      location: "100% Télétravail",
+      title: "DevOps Engineer",
+      description: "This position, reporting to the CTO, will work with our CTO and development team leads on DevOps projects and practices.",
+      location: "100% Remote",
       responsibilities: [
-        "Concevoir, mettre en œuvre et tester les processus de construction, de déploiement et de gestion de configuration de CloudSpace.",
-        "Construire et tester des outils d'automatisation pour la fourniture d'infrastructure.",
-        "Gérer les déploiements de code dans tous les environnements.",
-        "Surveiller les indicateurs et développer des moyens d'améliorer.",
-        "Construire, maintenir et surveiller les normes de configuration.",
-        "Assurer la gestion quotidienne et l'administration des projets.",
-        "Construire et maintenir l'infrastructure de surveillance et de journalisation des applications.",
-        "Améliorer le développement de l'infrastructure et des applications.",
-        "Gérer les outils CI et CD avec l'équipe.",
-        "Documenter, concevoir et mettre à jour divers processus et pratiques de développement."
+        "Design, implement, and test CloudSpace's build, deployment, and configuration management processes.",
+        "Build and test automation tools for infrastructure provisioning.",
+        "Manage code deployments across all environments.",
+        "Monitor metrics and develop ways to improve.",
+        "Build, maintain, and monitor configuration standards.",
+        "Provide daily management and administration of projects.",
+        "Build and maintain application monitoring and logging infrastructure.",
+        "Improve infrastructure and application development.",
+        "Manage CI and CD tools with the team.",
+        "Document, design, and update various development processes and practices."
       ],
       qualifications: [
-        "Diplôme technique de 4 ans ou expérience équivalente.",
-        "2 ans d'expérience préalable en tant qu'ingénieur DevOps.",
-        "Expérience pratique avec des outils de gestion de configuration et de déploiement d'applications comme Ansible.",
-        "Familiarité avec Docker, Kubernetes, Prometheus, Grafana et AWS.",
-        "Compétences en communication et souci du détail."
+        "4-year technical degree or equivalent experience.",
+        "2+ years of previous experience as a DevOps Engineer.",
+        "Hands-on experience with configuration management and application deployment tools such as Ansible.",
+        "Familiarity with Docker, Kubernetes, Prometheus, Grafana, and AWS.",
+        "Strong communication skills and attention to detail."
       ]
     },
     {
-      title: "Ingénieur en Sécurité Cybernétique",
-      description: "InfoSys Consulting recherche un Ingénieur en Sécurité Cybernétique (Support à l'Infrastructure de Défense Cybernétique) pour notre site client à Washington, DC.",
+      title: "Cybersecurity Engineer",
+      description: "InfoSys Consulting is seeking a Cybersecurity Engineer (Cyber Defense Infrastructure Support) for our client site in Washington, DC.",
       location: "Washington, DC",
       responsibilities: [
-        "Concevoir, développer, intégrer, mettre en œuvre, exploiter et analyser des technologies de sécurité cybernétique.",
-        "Fournir un support pour garantir que les produits et services respectent toutes les politiques/procédures d'Assurance de l'Information, les exigences de défense réseau et les meilleures pratiques.",
-        "Assurer le soutien aux activités de protection et aux actions de réponse pour les systèmes d'Information Technologique gouvernementaux."
+        "Design, develop, integrate, implement, operate, and analyze cybersecurity technologies.",
+        "Provide support to ensure that products and services meet all Information Assurance policies/procedures, network defense requirements, and best practices.",
+        "Support protection activities and response actions for government IT systems."
       ],
       qualifications: [
-        "BS/BA et 8+ années d'expérience dans la discipline CND ou un MA/MS avec 6+ années d'expérience pertinente. Un candidat sans diplôme avec 12+ années d'expérience pertinente peut également être considéré.",
-        "6+ années d'expérience dans la conception, le développement, l'intégration, la mise en œuvre, l'exploitation et l'analyse des technologies de sécurité cybernétique.",
-        "Certifications préférées : CISSP, GCIA, CEH, CNDA, GCIH ou CSIH.",
-        "Connaissance préalable de Splunk, des audits et des technologies cloud fortement souhaitée."
+        "BS/BA and 8+ years of experience in the CND discipline, or an MA/MS with 6+ years of relevant experience. A candidate without a degree but with 12+ years of relevant experience may also be considered.",
+        "6+ years of experience in designing, developing, integrating, implementing, operating, and analyzing cybersecurity technologies.",
+        "Preferred certifications: CISSP, GCIA, CEH, CNDA, GCIH, or CSIH.",
+        "Prior experience with Splunk, auditing, and cloud technologies is highly desired."
       ]
     },
     {
-      title: "Ingénieur Réseau Cloud",
-      description: "Le rôle d'Ingénieur Cloud/Infrastructure est d'aider le client à maintenir l'infrastructure réseau et cloud actuelle.",
-      location: "Télétravail avec jusqu'à 25% de déplacements chez les clients autour de la région de Washington DC.",
+      title: "Cloud Network Engineer",
+      description: "The role of Cloud/Infrastructure Engineer is to assist the client in maintaining the current network and cloud infrastructure.",
+      location: "Remote with up to 25% travel to client sites around the Washington DC area.",
       responsibilities: [
-        "Interagir avec les clients, les fournisseurs et le personnel technique pour analyser les besoins commerciaux et techniques relatifs à l'infrastructure réseau et cloud.",
-        "Configurer, tester et produire des documents détaillés de déploiement dans les délais impartis.",
-        "Travailler en étroite collaboration avec le Chef de Projet pour établir et fournir une direction technique cohérente, collecter et analyser les indicateurs de performance, établir et faire respecter les accords de niveau de service.",
-        "Documenter les normes et propositions d'ingénierie, diriger ou assister dans le développement des conceptions d'architecture/ingénierie de sécurité, des modifications et de la gestion de configuration.",
-        "Compétences interpersonnelles et service client solides en plus de la capacité à gérer et prioriser efficacement les projets et tâches individuels. Compétences supérieures en communication écrite et orale. Compétences en gestion des fournisseurs requises."
+        "Interact with clients, vendors, and technical staff to analyze business and technical needs related to network and cloud infrastructure.",
+        "Configure, test, and produce detailed deployment documentation within specified deadlines.",
+        "Work closely with the Project Manager to establish and deliver consistent technical direction, collect and analyze performance metrics, and establish and enforce service level agreements.",
+        "Document engineering standards and proposals, lead or assist in the development of security architecture/engineering designs, changes, and configuration management.",
+        "Strong interpersonal and customer service skills, in addition to the ability to effectively manage and prioritize individual projects and tasks. Superior written and oral communication skills. Vendor management skills required."
       ],
       qualifications: [
-        "5+ années d'expérience en opérations réseau à grande échelle ; Routeurs, Switches et Équilibreurs de Charge.",
-        "2+ années d'expérience opérationnelle pratique avec Amazon Web Services (AWS). Certification AWS fortement recommandée.",
-        "Diplôme en informatique ou expérience professionnelle équivalente, avec un minimum de 8-10 années d'expérience pratique dans la mise en œuvre et l'administration de réseaux complexes, multi-sites et multi-fournisseurs dans un environnement géographiquement distribué.",
-        "Expérience opérationnelle AWS : 2 ans (Requis).",
-        "Certifications souhaitées : CCNP, ITIL, AWS Certified Cloud Practitioner, AWS Certified Solutions Architect Associate."
+        "5+ years of experience in large-scale network operations; Routers, Switches, and Load Balancers.",
+        "2+ years of hands-on operational experience with Amazon Web Services (AWS). AWS certification is strongly recommended.",
+        "Degree in Computer Science or equivalent professional experience, with a minimum of 8-10 years of hands-on experience in implementing and administering complex, multi-site, multi-vendor networks in a geographically distributed environment.",
+        "AWS Operational Experience: 2 years (Required).",
+        "Desired certifications: CCNP, ITIL, AWS Certified Cloud Practitioner, AWS Certified Solutions Architect Associate."
       ]
     },
     {
-      title: "Développeur Frontend",
-      description: "Nous recherchons un Développeur Frontend talentueux pour rejoindre notre équipe de développement. Vous travaillerez sur des projets passionnants, en utilisant les technologies web modernes pour créer des interfaces utilisateur attrayantes et fonctionnelles.",
-      location: "Télétravail avec possibilité de présence au bureau selon les besoins.",
+      title: "Frontend Developer",
+      description: "We are looking for a talented Frontend Developer to join our development team. You will work on exciting projects, using modern web technologies to create attractive and functional user interfaces.",
+      location: "Remote with possible on-site presence as needed.",
       responsibilities: [
-        "Développer des applications web interactives et responsives en utilisant HTML, CSS, et JavaScript.",
-        "Collaborer avec les concepteurs UX/UI pour traduire les maquettes en interfaces fonctionnelles.",
-        "Assurer la compatibilité des applications avec différents navigateurs et appareils.",
-        "Participer aux revues de code et à l'amélioration continue des processus de développement.",
-        "Déboguer et optimiser les performances des applications web."
+        "Develop interactive and responsive web applications using HTML, CSS, and JavaScript.",
+        "Collaborate with UX/UI designers to translate designs into functional interfaces.",
+        "Ensure application compatibility across different browsers and devices.",
+        "Participate in code reviews and continuous improvement of development processes.",
+        "Debug and optimize web application performance."
       ],
       qualifications: [
-        "Diplôme en informatique ou expérience équivalente.",
-        "2+ années d'expérience en développement frontend.",
-        "Maîtrise des technologies web telles que HTML, CSS, JavaScript, et frameworks modernes comme React ou Angular.",
-        "Expérience avec les outils de gestion de version comme Git.",
-        "Compétences en résolution de problèmes et en communication."
+        "Degree in Computer Science or equivalent experience.",
+        "2+ years of experience in frontend development.",
+        "Proficiency in web technologies such as HTML, CSS, JavaScript, and modern frameworks like React or Angular.",
+        "Experience with version control tools like Git.",
+        "Problem-solving and communication skills."
       ]
     },
     {
-      title: "Chef de Projet Informatique",
-      description: "Nous recherchons un Chef de Projet Informatique pour superviser la gestion et l'exécution de projets technologiques complexes. Vous serez responsable de la coordination des équipes, du suivi des délais et du budget, et de la communication avec les parties prenantes.",
+      title: "IT Project Manager",
+      description: "We are seeking an IT Project Manager to oversee the management and execution of complex technology projects. You will be responsible for coordinating teams, tracking timelines and budgets, and communicating with stakeholders.",
       location: "Washington, DC",
       responsibilities: [
-        "Gérer et coordonner tous les aspects des projets informatiques du début à la fin.",
-        "Développer des plans de projet détaillés et des échéanciers.",
-        "Assurer le suivi des budgets et des ressources.",
-        "Communiquer régulièrement avec les parties prenantes pour assurer l'alignement sur les objectifs du projet.",
-        "Évaluer les risques et développer des plans d'atténuation."
+        "Manage and coordinate all aspects of IT projects from start to finish.",
+        "Develop detailed project plans and timelines.",
+        "Track budgets and resources.",
+        "Communicate regularly with stakeholders to ensure alignment with project objectives.",
+        "Assess risks and develop mitigation plans."
       ],
       qualifications: [
-        "Diplôme en gestion de projet ou domaine connexe.",
-        "5+ années d'expérience en gestion de projets informatiques.",
-        "Certification PMP ou similaire est un plus.",
-        "Expérience avec les méthodologies Agile et Scrum.",
-        "Compétences organisationnelles et en communication exceptionnelles."
+        "Degree in Project Management or related field.",
+        "5+ years of experience in IT project management.",
+        "PMP certification or similar is a plus.",
+        "Experience with Agile and Scrum methodologies.",
+        "Exceptional organizational and communication skills."
       ]
     },
     {
-      title: "Analyste en Intelligence Artificielle",
-      description: "Nous recherchons un Analyste en Intelligence Artificielle pour développer des modèles d'IA et fournir des insights basés sur les données. Vous travaillerez avec nos équipes pour concevoir et mettre en œuvre des solutions d'IA innovantes.",
-      location: "100% Télétravail",
+      title: "Artificial Intelligence Analyst",
+      description: "We are looking for an Artificial Intelligence Analyst to develop AI models and provide data-driven insights. You will work with our teams to design and implement innovative AI solutions.",
+      location: "100% Remote",
       responsibilities: [
-        "Développer et tester des modèles d'IA et de machine learning.",
-        "Analyser de grandes quantités de données pour extraire des insights pertinents.",
-        "Collaborer avec les équipes de développement pour intégrer les solutions d'IA dans les produits existants.",
-        "Assurer la qualité et l'efficacité des modèles d'IA.",
-        "Rester à jour avec les dernières avancées en matière d'IA et de machine learning."
+        "Develop and test AI and machine learning models.",
+        "Analyze large amounts of data to extract relevant insights.",
+        "Collaborate with development teams to integrate AI solutions into existing products.",
+        "Ensure the quality and efficiency of AI models.",
+        "Stay up-to-date with the latest advancements in AI and machine learning."
       ],
       qualifications: [
-        "Diplôme en informatique, mathématiques ou domaine connexe.",
-        "3+ années d'expérience en développement de modèles d'IA et de machine learning.",
-        "Expérience avec des outils et frameworks d'IA comme TensorFlow, PyTorch ou scikit-learn.",
-        "Compétences en analyse de données et en programmation en Python.",
-        "Excellentes compétences en résolution de problèmes et en communication."
+        "Degree in Computer Science, Mathematics, or a related field.",
+        "3+ years of experience in developing AI and machine learning models.",
+        "Experience with AI tools and frameworks such as TensorFlow, PyTorch, or scikit-learn.",
+        "Skills in data analysis and programming in Python.",
+        "Excellent problem-solving and communication skills."
       ]
     }
-  ];
-  
+  ];  
   avatars = [
     'assets/img/blocks/avatars/avatar-f-1.png',
     'assets/img/blocks/avatars/avatar-f-2.png',

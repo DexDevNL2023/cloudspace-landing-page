@@ -11,22 +11,22 @@ export class HeaderComponent {
     color: '#3D72B4',
     logoUrl: 'assets/img/logo.png',
     menuItems: [
-      { label: 'Accueil', link: '/', subMenu: [] },
-      { label: 'À Propos', link: '/about', subMenu: [] },
-      {
-        label: 'Ce Que Nous Faisons',
-        link: '/service',
-        subMenu: [
-          { id: 1, label: 'Transformation Cloud' },
-          { id: 2, label: 'Cybersécurité' },
-          { id: 3, label: 'Formation' },
-          { id: 4, label: 'Ingénierie Réseau' },
-          { id: 5, label: 'Développement Web' },
-          { id: 6, label: 'Développement d\'Applications' },
-          { id: 7, label: 'Intelligence Artificielle' }
-        ]
-      },
-      { label: 'Carrières', link: '/career', subMenu: [] }
+        { label: 'Home', link: '/', subMenu: [] },
+        { label: 'About Us', link: '/about', subMenu: [] },
+        {
+            label: 'What We Do',
+            link: '/service',
+            subMenu: [
+                { id: 1, label: 'Cloud Transformation' },
+                { id: 2, label: 'Cybersecurity' },
+                { id: 3, label: 'Network Engineering' },
+                { id: 4, label: 'Training' },
+                { id: 5, label: 'Web Development' },
+                { id: 6, label: 'Application Development' },
+                { id: 7, label: 'Artificial Intelligence' }
+            ]
+        },
+        { label: 'Careers', link: '/career', subMenu: [] }
     ]
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] } = { label: 'Home', link: '/', subMenu: [] };
