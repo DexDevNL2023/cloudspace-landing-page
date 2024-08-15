@@ -244,7 +244,45 @@ export class WhatwedoComponent {
           ]
         }
       ]
-    }
+    },
+    {
+      id: 7,
+      title: "Artificial Intelligence",
+      description: [
+        {
+          text: "We offer artificial intelligence (AI) consulting services to help you integrate AI solutions that enhance efficiency and innovate your business processes."
+        },
+        {
+          text: "Our services include the implementation of machine learning algorithms, advanced analytics, and other AI technologies to help you achieve your goals faster."
+        }
+      ],
+      imageUrl: "assets/img/services/AI.jpg",
+      sections: [
+        {
+          title: "Technology",
+          description: "Implementing the latest advances in artificial intelligence to transform your business processes.",
+          subSections: [
+            { imgSrc: "assets/img/services/machine_learning.png", title: "Machine Learning", description: "Development of custom machine learning models.", color: "blue" },
+            { imgSrc: "assets/img/services/natural_language_processing.png", title: "Natural Language Processing", description: "Solutions for understanding and processing human language.", color: "dark-blue" }
+          ]
+        },
+        {
+          title: "Services",
+          description: "Custom AI solutions to meet your specific needs.",
+          subSections: [
+            { imgSrc: "assets/img/services/ai_consulting.png", title: "AI Consulting", description: "Consulting for the integration and optimization of AI technologies.", color: "blue" },
+            { imgSrc: "assets/img/services/ai_integration.png", title: "AI Integration", description: "Integrating AI solutions into your existing systems.", color: "dark-blue" }
+          ]
+        },
+        {
+          title: "Partners",
+          description: "Collaboration with industry leaders to provide cutting-edge AI solutions.",
+          subSections: [
+            { imgSrc: "assets/img/services/ai_partners.png", title: "AI Partnerships", description: "Partnerships with AI experts for innovative solutions.", color: "dark-blue" }
+          ]
+        }
+      ]
+    }    
   ];  
 
   whatwedoContent: any; // This will hold the specific content to display

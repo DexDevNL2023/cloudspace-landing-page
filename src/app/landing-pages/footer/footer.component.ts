@@ -30,7 +30,7 @@ export class FooterComponent {
     ],
     address: '462 Vandegrift Road,  Stafford VA 22554',
     phone: '(001) 571-572-2578',
-    email: 'info@infosys.com',
+    email: 'info@infosysconsulting.com',
     copyright: 'IT-Consulting Teleo © 2023'
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] };

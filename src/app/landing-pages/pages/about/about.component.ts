@@ -17,7 +17,7 @@ aboutContent = {
     title: "Our Vision",
     description: [
         { 
-            text: `InfoSys Consulting is a Cameroonian company based in the United States, specializing in providing innovative technological solutions to help our clients achieve their goals. We take pride in our roots and our commitment to delivering high-quality services tailored to the unique needs of each client.`
+            text: `InfoSys Consulting is a company based in the United States, specializing in providing innovative technological solutions to help our clients achieve their goals. We take pride in our roots and our commitment to delivering high-quality services tailored to the unique needs of each client.`
         },
         { 
             text: `Our expertise spans several key areas: web development, cloud services, network and security, as well as IT project management. Whether you are a small business looking to establish your online presence or a large organization in need of a secure cloud infrastructure, we have the skills and experience to support you.`

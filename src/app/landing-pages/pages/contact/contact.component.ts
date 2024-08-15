@@ -34,7 +34,7 @@ export class ContactComponent {
       {
         icon: "pi pi-envelope",
         label: "Send Us an Email",
-        info: "info@infosys.com"
+        info: "info@infosysconsulting.com"
       }
     ]
   };  
