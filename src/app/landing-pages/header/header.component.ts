@@ -12,7 +12,14 @@ export class HeaderComponent {
     logoUrl: 'assets/img/logo.png',
     menuItems: [
         { label: 'Home', link: '/', subMenu: [] },
-        { label: 'About Us', link: '/about', subMenu: [] },
+        {
+          label: 'About Us',
+          link: '/about',
+          subMenu: [
+            { id: 'who-we-are', label: 'Who We Are' },
+            { id: 'why-us', label: 'Why InfoSys Consulting' }
+          ]
+        },
         {
             label: 'What We Do',
             link: '/service',
@@ -32,6 +39,7 @@ export class HeaderComponent {
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] } = { label: 'Home', link: '/', subMenu: [] };
   currentLanguage: string = 'fr';
   dropdownVisible = false;
+  mobileMenuVisible = false;
 
   constructor(public appMain: MainComponent, private el: ElementRef) {
     // Ajoutez l'écouteur d'événement de défilement à la fenêtre
@@ -65,5 +73,9 @@ export class HeaderComponent {
   toggleDropdown(menuItem: { label: string, link: string, subMenu: { id: number, label: string }[] }): void {
       this.menuItemSelected = menuItem;
       this.dropdownVisible = !this.dropdownVisible;
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenuVisible = !this.mobileMenuVisible;
   }
 }

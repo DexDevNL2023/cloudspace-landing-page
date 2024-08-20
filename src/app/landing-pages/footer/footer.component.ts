@@ -15,7 +15,10 @@ export class FooterComponent {
     logoUrl: 'assets/img/logo.png',
     usefulLinks: [
         { label: 'Home', link: '/', subMenu: [] },
-        { label: 'About Us', link: '/about', subMenu: [] },
+        { label: 'About us', link: '/about', subMenu: [
+          { id: 'who-we-are', label: 'Who We Are' },
+          { id: 'why-us', label: 'Why InfoSys Consulting' },
+        ] },
         { label: 'Careers', link: '/career', subMenu: [] },
         { label: 'Contact', link: '/contact', subMenu: [] }
     ],

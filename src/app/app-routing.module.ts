@@ -17,7 +17,7 @@ import { WhatwedoComponent } from './landing-pages/pages/whatwedo/whatwedo.compo
                 path: '', component: MainComponent,
                 children: [
                     {path: '', component: HomeComponent},
-                    {path: 'about', component: AboutComponent},
+                    {path: 'about/:id', component: AboutComponent},
                     {path: 'contact', component: ContactComponent},
                     {path: 'career', component: CareerComponent},
                     {path: 'service/:id', component: WhatwedoComponent}
