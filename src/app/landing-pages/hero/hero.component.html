@@ -8,16 +8,16 @@
             <div class="col-lg-12 d-flex flex-column justify-content-center">
                 <div>
                     <div class="text-moving aos-init aos-animate" data-aos="fade-up">
-                        {{ heroContent.title }} <span *ngIf="heroContent.spanText">{{ heroContent.spanText }}</span>
+                        {{ heroContent.title | translate }} <span *ngIf="heroContent.spanText">{{ heroContent.spanText | translate }}</span>
                     </div>
                 </div>
                 <h2 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate"
-                    *ngIf="heroContent.description">{{ heroContent.description }}</h2>
+                    *ngIf="heroContent.description">{{ heroContent.description | translate }}</h2>
                 <div *ngIf="heroContent.buttonText" data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                     <div class="text-center text-lg-start">
                         <a (click)="appMain.scrollTo(heroContent.buttonLink)"
                             class="btn-get-started btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
-                            <span>{{ heroContent.buttonText }}</span>
+                            <span>{{ heroContent.buttonText | translate }}</span>
                             <i class="pi pi-arrow-right"></i>
                         </a>
                     </div>

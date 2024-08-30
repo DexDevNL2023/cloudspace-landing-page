@@ -99,8 +99,6 @@ import {EventService} from './utilities/services/eventservice';
 import {MenuService} from './utilities/services/app.menu.service';
 import {RouterLink, RouterModule} from "@angular/router";
 import {MessageService} from "primeng/api";
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppAccessdeniedComponent } from './utilities/pages/accesdenied/app.accessdenied.component';
 import { AppErrorComponent } from './utilities/pages/error/app.error.component';
 import { AppHelpComponent } from './utilities/pages/help/app.help.component';
@@ -116,11 +114,12 @@ import { WhatwedoComponent } from './landing-pages/pages/whatwedo/whatwedo.compo
 import { HeroComponent } from './landing-pages/hero/hero.component';
 import { HerosubComponent } from './landing-pages/herosub/herosub.component';
 import { EmailService } from './utilities/services/email.service';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-
-// Function to load translation files
+// Fonction de chargement pour TranslateHttpLoader
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http);
 }
 
 @NgModule({
@@ -130,13 +129,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         FormsModule,
         AppRoutingModule,
         HttpClientModule,
-        TranslateModule.forRoot({
-          loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-          }
-        }),
         BrowserAnimationsModule,
         AccordionModule,
         AutoCompleteModule,
@@ -221,7 +213,14 @@ export function HttpLoaderFactory(http: HttpClient) {
         NgStyle,
         NgForOf,
         NgIf,
-        NgOptimizedImage
+        NgOptimizedImage,
+        TranslateModule.forRoot({
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          }
+        })
     ],
     declarations: [
         AppComponent,

@@ -1,79 +1,82 @@
 <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <h4>{{ footerContent.interestedTitle }}</h4>
-                    <p>{{ footerContent.interestedDescription }}</p>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <a (click)="appMain.navigateToContact()"
-                        class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
-                        <span>{{ footerContent.contactButtonText }}</span>
-                        <i class="pi pi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-top">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-5 col-md-12 footer-info">
-                    <a (click)="appMain.goToHome()" class="logo d-flex align-items-center">
-                        <img src="{{ footerContent.logoUrl }}" alt="">
-                    </a>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Useful links</h4>
-                    <ul>
-                        <li *ngFor="let menuItem of footerContent.usefulLinks">
-                            <a *ngIf="menuItem.subMenu.length === 0"
-                                (click)="appMain.navigateToUsefulLinks(menuItem.link)"
-                                class="nav-link cursor-pointer">{{ menuItem.label }}</a>
-                            <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)"
-                                class="nav-link cursor-pointer">{{ menuItem.label }} <i
-                                    class="pi pi-chevron-right"></i></a>
-                            <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected">
-                                <li *ngFor="let subItem of menuItemSelected.subMenu">
-                                    <a class="nav-link cursor-pointer"
-                                        (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{ subItem.label
-                                        }}</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>What we do</h4>
-                    <ul>
-                        <li *ngFor="let menuItem of footerContent.whatWeDo">
-                            <a class="nav-link cursor-pointer"
-                                (click)="appMain.navigateToWhatWeDo(menuItem.link, menuItem.id)">{{ menuItem.label
-                                }}</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Contact Us</h4>
-                    <p>
-                        <strong>Address:</strong> {{ footerContent.address }} <br><br>
-                        <strong>Phone:</strong> {{ footerContent.phone }}<br>
-                        <strong>Email:</strong> {{ footerContent.email }}<br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+  <!-- Footer Newsletter Section -->
+  <div class="footer-newsletter">
     <div class="container">
-        <div class="copyright">
-            <strong><span>{{ footerContent.copyright }}</span></strong> | All Rights Reserved
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h4>{{ footerContent.interestedTitle | translate }}</h4>
+          <p>{{ footerContent.interestedDescription | translate }}</p>
         </div>
+        <div class="col-lg-6 text-center">
+          <a (click)="appMain.navigateToContact()"
+             class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
+            <span>{{ footerContent.contactButtonText | translate }}</span>
+            <i class="pi pi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Footer Top Section -->
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Footer Info -->
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a (click)="appMain.goToHome()" class="logo d-flex align-items-center">
+            <img src="{{ footerContent.logoUrl }}" alt="">
+          </a>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>{{ 'FOOTER.USEFUL_LINKS_LABEL' | translate }}</h4>
+          <ul>
+            <li *ngFor="let menuItem of footerContent.usefulLinks">
+              <a *ngIf="menuItem.subMenu.length === 0"
+                 (click)="appMain.navigateToUsefulLinks(menuItem.link)"
+                 class="nav-link cursor-pointer">{{ menuItem.label | translate }}</a>
+              <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)"
+                 class="nav-link cursor-pointer">{{ menuItem.label | translate }} <i class="pi pi-chevron-right"></i></a>
+              <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected">
+                <li *ngFor="let subItem of menuItemSelected.subMenu">
+                  <a class="nav-link cursor-pointer"
+                     (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{ subItem.label | translate }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- What We Do -->
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>{{ 'FOOTER.WHAT_WE_DO_LABEL' | translate }}</h4>
+          <ul>
+            <li *ngFor="let menuItem of footerContent.whatWeDo">
+              <a class="nav-link cursor-pointer"
+                 (click)="appMain.navigateToWhatWeDo(menuItem.link, menuItem.id)">{{ menuItem.label | translate }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>{{ 'FOOTER.CONTACT_BUTTON_TEXT' | translate }}</h4>
+          <p>
+            <strong>{{ 'FOOTER.ADDRESS_LABEL' | translate }}:</strong> {{ footerContent.address | translate }} <br><br>
+            <strong>{{ 'FOOTER.PHONE_LABEL' | translate }}:</strong> {{ footerContent.phone | translate }}<br>
+            <strong>{{ 'FOOTER.EMAIL_LABEL' | translate }}:</strong> {{ footerContent.email | translate }}<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom Section -->
+  <div class="container">
+    <div class="copyright">
+      <strong><span>{{ footerContent.copyright | translate }}</span></strong> | All Rights Reserved
+    </div>
+  </div>
 </footer>

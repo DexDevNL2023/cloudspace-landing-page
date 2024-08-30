@@ -8,19 +8,20 @@
       <ul *ngIf="!mobileMenuVisible" class="desktop-menu">
         <li *ngFor="let menuItem of headerContent.menuItems" class="dropdown">
           <a *ngIf="menuItem.subMenu.length === 0" (click)="appMain.navigateToUsefulLinks(menuItem.link)"
-            class="nav-link cursor-pointer">{{ menuItem.label }}</a>
+            class="nav-link cursor-pointer">{{ menuItem.label | translate }}</a>
           <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)"
-            (mouseenter)="toggleDropdown(menuItem)" class="nav-link cursor-pointer">{{ menuItem.label }} <i
-              class="pi pi-chevron-down"></i></a>
+            (mouseenter)="toggleDropdown(menuItem)" class="nav-link cursor-pointer">{{ menuItem.label | translate }} <i class="pi pi-chevron-down"></i>
+            </a>
           <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected"
             class="dropdown-active">
             <li *ngFor="let subItem of menuItemSelected.subMenu">
-              <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">{{
-                subItem.label }}</a>
+              <a class="nav-link cursor-pointer" (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id)">
+                {{ subItem.label | translate }}
+              </a>
             </li>
           </ul>
         </li>
-        <li><a class="getstarted nav-link cursor-pointer" (click)="appMain.navigateToContact()">Contacts</a></li>
+        <li><a class="getstarted nav-link cursor-pointer" (click)="toggleLanguage()">{{ currentLanguage === 'fr' ? 'French' : 'English' }}</a></li>
       </ul>
 
       <!-- Bouton Toggle Menu Mobile -->
@@ -38,19 +39,20 @@
           <li *ngFor="let menuItem of headerContent.menuItems" class="dropdown">
             <a *ngIf="menuItem.subMenu.length === 0"
               (click)="appMain.navigateToUsefulLinks(menuItem.link); toggleMobileMenu()"
-              class="nav-link cursor-pointer">{{ menuItem.label }}</a>
+              class="nav-link cursor-pointer">{{ menuItem.label | translate }}</a>
             <a *ngIf="menuItem.subMenu.length > 0" (click)="toggleDropdown(menuItem)"
-              class="nav-link cursor-pointer">{{ menuItem.label }} <i class="pi pi-chevron-down"></i></a>
+              class="nav-link cursor-pointer">{{ menuItem.label | translate }} <i class="pi pi-chevron-down"></i>
+            </a>
             <ul *ngIf="menuItem.subMenu.length > 0 && dropdownVisible && menuItem === menuItemSelected"
               class="dropdown-active">
               <li *ngFor="let subItem of menuItemSelected.subMenu">
                 <a (click)="appMain.navigateToWhatWeDo(menuItem.link, subItem.id); toggleMobileMenu()"
-                  class="nav-link cursor-pointer">{{ subItem.label }}</a>
+                  class="nav-link cursor-pointer">{{ subItem.label | translate }}
+                </a>
               </li>
             </ul>
           </li>
-          <li><a class="getstarted nav-link cursor-pointer"
-              (click)="appMain.navigateToContact(); toggleMobileMenu()">Contacts</a></li>
+          <li><a class="getstarted nav-link cursor-pointer" (click)="toggleLanguage()">{{ currentLanguage === 'fr' ? 'French' : 'English' }}</a></li>
         </ul>
       </div>
     </nav><!-- .navbar -->

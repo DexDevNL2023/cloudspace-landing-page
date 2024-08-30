@@ -9,32 +9,32 @@ import AOS from "aos";
 export class FooterComponent {
   footerContent = {
     color: '#3D72B4',
-    interestedTitle: 'Interested in our services?',
-    interestedDescription: 'Contact us today!',
-    contactButtonText: 'Contact Us',
+    interestedTitle: 'FOOTER.INTERESTED_TITLE',
+    interestedDescription: 'FOOTER.INTERESTED_DESCRIPTION',
+    contactButtonText: 'FOOTER.CONTACT_BUTTON_TEXT',
     logoUrl: 'assets/img/logo.png',
     usefulLinks: [
-        { label: 'Home', link: '/', subMenu: [] },
-        { label: 'About us', link: '/about', subMenu: [
-          { id: 'who-we-are', label: 'Who We Are' },
-          { id: 'why-us', label: 'Why InfoSys Consulting' },
-        ] },
-        { label: 'Careers', link: '/career', subMenu: [] },
-        { label: 'Contact', link: '/contact', subMenu: [] }
+      { label: 'FOOTER.USEFUL_LINKS.HOME', link: '/', subMenu: [] },
+      { label: 'FOOTER.USEFUL_LINKS.ABOUT_US', link: '/about', subMenu: [
+        { id: 'who-we-are', label: 'FOOTER.USEFUL_LINKS.WHO_WE_ARE' },
+        { id: 'why-us', label: 'FOOTER.USEFUL_LINKS.WHY_US' }
+      ] },
+      { label: 'FOOTER.USEFUL_LINKS.CAREERS', link: '/career', subMenu: [] },
+      { label: 'FOOTER.USEFUL_LINKS.CONTACT', link: '/contact', subMenu: [] }
     ],
     whatWeDo: [
-        { id: 1, label: 'Cloud Transformation', link: '/service' },
-        { id: 2, label: 'Cybersecurity', link: '/service' },
-        { id: 3, label: 'Network Engineering', link: '/service' },
-        { id: 4, label: 'Training', link: '/service' },
-        { id: 5, label: 'Web Development', link: '/service' },
-        { id: 6, label: 'Application Development', link: '/service' },
-        { id: 7, label: 'Artificial Intelligence', link: '/service' }
+      { id: 1, label: 'FOOTER.WHAT_WE_DO.CLOUD_TRANSFORMATION', link: '/service' },
+      { id: 2, label: 'FOOTER.WHAT_WE_DO.CYBERSECURITY', link: '/service' },
+      { id: 3, label: 'FOOTER.WHAT_WE_DO.NETWORK_ENGINEERING', link: '/service' },
+      { id: 4, label: 'FOOTER.WHAT_WE_DO.TRAINING', link: '/service' },
+      { id: 5, label: 'FOOTER.WHAT_WE_DO.WEB_DEVELOPMENT', link: '/service' },
+      { id: 6, label: 'FOOTER.WHAT_WE_DO.APPLICATION_DEVELOPMENT', link: '/service' },
+      { id: 7, label: 'FOOTER.WHAT_WE_DO.ARTIFICIAL_INTELLIGENCE', link: '/service' }
     ],
-    address: '462 Vandegrift Road,  Stafford VA 22554',
-    phone: '(001) 571-572-2578',
-    email: 'info@infosysconsulting.com',
-    copyright: 'IT-Consulting Teleo © 2023'
+    address: 'FOOTER.ADDRESS',
+    phone: 'FOOTER.PHONE',
+    email: 'FOOTER.EMAIL',
+    copyright: 'FOOTER.COPYRIGHT'
   };
   menuItemSelected: { label: string, link: string, subMenu: { id: number, label: string }[] };
   dropdownVisible = false;

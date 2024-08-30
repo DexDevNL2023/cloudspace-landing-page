@@ -1,0 +1,548 @@
+{
+    "WHATWEDO": {
+        "HERO": {
+            "TITLE": "Our Services",
+            "SPAN_TEXT": "of Quality",
+            "DESCRIPTION": "Discover how our services can transform your business. We are committed to providing innovative solutions tailored to your specific needs.",
+            "BUTTON_TEXT": "Learn more",
+            "BUTTON_LINK": "/services"
+        },
+        "CONTENTS": [
+            {
+            "id": 1,
+            "title": "What Can Cloud Computing Do for You?",
+            "description": [
+                "Our cloud computing services help businesses transition smoothly to cloud platforms, ensuring scalability and efficiency.",
+                "From cloud strategy to deployment, we customize solutions that align with your business goals and security needs."
+            ],
+            "imageUrl": "assets/img/services/cloud_transformation.webp",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "We leverage advanced cloud technologies to enhance the speed, security, and efficiency of your infrastructure.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/cloud_architecture.webp", "title": "Cloud Architecture", "description": "Designing robust and scalable cloud infrastructures.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/cloud_automation.png", "title": "DevOps", "description": "Implementing DevOps practices to streamline development and operations, ensuring faster delivery and continuous improvement.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "Our cloud services cover everything from initial strategy to ongoing management and optimization.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/cloud_migration.jpg", "title": "Cloud Migration", "description": "Seamless migration of data and applications to the cloud.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/cloud_management.jpg", "title": "Cloud Management", "description": "Comprehensive management of cloud environments.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "We collaborate with leading cloud service providers to deliver the best solutions tailored to your needs.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/cloud_partners.webp", "title": "Cloud Partnerships", "description": "Leveraging partnerships for enhanced cloud solutions.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 2,
+            "title": "How Do We Protect Your Data with Cybersecurity?",
+            "description": [
+                "Our cybersecurity services safeguard your business with cutting-edge security solutions designed to defend against evolving threats.",
+                "We integrate security measures into every aspect of your business to ensure robust protection."
+            ],
+            "imageUrl": "assets/img/services/cyber_security.png",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "Our security technologies protect your digital assets from a variety of threats.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/security_architecture.png", "title": "Security Architecture", "description": "Designing secure systems and networks.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/threat_detection.png", "title": "Threat Detection", "description": "Quickly identifying and neutralizing threats.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "We provide a range of cybersecurity services to protect your organization at every level.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/incident_response.png", "title": "Incident Response", "description": "Rapid response to security breaches.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/security_assessment.png", "title": "Security Assessment", "description": "Comprehensive evaluation of your security posture.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "Partnering with leading security providers to strengthen your defenses.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/security_partners.png", "title": "Security Partnerships", "description": "Leveraging partnerships for enhanced security solutions.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 3,
+            "title": "Engineering the Future of Network Solutions",
+            "description": [
+                "Our network engineering services ensure your business has a reliable and secure infrastructure that supports growth and innovation.",
+                "We design and implement network solutions that maximize performance and availability."
+            ],
+            "imageUrl": "assets/img/services/network.png",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "We utilize cutting-edge network technologies to deliver reliable and secure connectivity.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/network_design.png", "title": "Network Design", "description": "Creating efficient network architectures.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/network_security.png", "title": "Network Security", "description": "Protecting networks from unauthorized access.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "Our network services encompass design, deployment, and management to ensure optimal performance.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/network_management.png", "title": "Network Management", "description": "Managing and monitoring network performance.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/network_optimization.png", "title": "Network Optimization", "description": "Improving network efficiency and speed.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "We collaborate with leading network technology providers to deliver the best solutions.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/network_partners.png", "title": "Network Partnerships", "description": "Building strong partnerships for superior network solutions.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 4,
+            "title": "Transform Your Skills with Our Training Programs",
+            "description": [
+                "Our training services are designed to equip your team with the skills needed to excel in today's competitive environment.",
+                "We offer customized training programs that bridge the gap between current skills and future needs."
+            ],
+            "imageUrl": "assets/img/services/training.png",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "Our training programs cover a wide range of technology topics to enhance your team's capabilities.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/tech_training.png", "title": "Tech Training", "description": "Up-to-date training on the latest technologies.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/soft_skills.png", "title": "Soft Skills", "description": "Developing essential interpersonal skills.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "We offer a comprehensive suite of training services to meet your organization's needs.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/corporate_training.png", "title": "Corporate Training", "description": "Customized training for corporate teams.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/individual_training.png", "title": "Individual Training", "description": "Personalized training programs for individuals.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "Collaborating with industry leaders to deliver cutting-edge training solutions.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/training_partners.png", "title": "Training Partnerships", "description": "Partnering with experts to deliver top-notch training.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 5,
+            "title": "Web Development Tailored to Your Business",
+            "description": [
+                "Our web development services provide businesses with innovative and robust web solutions that enhance user experience and engagement.",
+                "We tailor each project to meet the unique needs of our clients, ensuring optimal functionality and aesthetics."
+            ],
+            "imageUrl": "assets/img/services/web-development.jpg",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "Using the latest web technologies to build high-performance, secure web applications.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/frontend_development.png", "title": "Frontend Development", "description": "Creating engaging user interfaces.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/backend_development.png", "title": "Backend Development", "description": "Building robust backend systems.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "Our web development services encompass design, development, and optimization for maximum performance.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/web_design.png", "title": "Web Design", "description": "Creating modern and attractive web designs.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/ecommerce.png", "title": "E-commerce", "description": "Developing high-performance e-commerce platforms.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "Collaborating with technology leaders to deliver advanced web solutions.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/web_partners.png", "title": "Web Partnerships", "description": "Working with leading partners for quality web solutions.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 6,
+            "title": "Application Development",
+            "description": [
+                "Our application development services focus on creating innovative, user-friendly, and scalable applications tailored to your business needs.",
+                "From concept to deployment, we work closely with you to bring your vision to life."
+            ],
+            "imageUrl": "assets/img/services/app-development.jpg",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "Utilizing the latest technologies to create powerful and efficient applications.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/mobile_dev.png", "title": "Mobile Development", "description": "Building responsive and engaging mobile apps.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/web_dev.png", "title": "Web Development", "description": "Developing feature-rich web applications.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "Our services include end-to-end application development, from strategy and design to testing and deployment.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/ui_ux.png", "title": "UI/UX Design", "description": "Crafting intuitive and visually appealing interfaces.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/qa_testing.png", "title": "QA & Testing", "description": "Ensuring the highest quality standards with rigorous testing.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "Partnering with top technology providers to deliver cutting-edge applications.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/app_partners.png", "title": "App Development Partnerships", "description": "Collaborating with industry leaders for top-notch application solutions.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 7,
+            "title": "Artificial Intelligence",
+            "description": [
+                "We offer artificial intelligence (AI) consulting services to help you integrate AI solutions that enhance efficiency and innovate your business processes.",
+                "Our services include the implementation of machine learning algorithms, advanced analytics, and other AI technologies to help you achieve your goals faster."
+            ],
+            "imageUrl": "assets/img/services/AI.jpg",
+            "sections": [
+                {
+                "title": "Technology",
+                "description": "Implementing the latest advances in artificial intelligence to transform your business processes.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/machine_learning.png", "title": "Machine Learning", "description": "Development of custom machine learning models.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/natural_language_processing.png", "title": "Natural Language Processing", "description": "Solutions for understanding and processing human language.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Services",
+                "description": "Custom AI solutions to meet your specific needs.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/ai_consulting.png", "title": "AI Consulting", "description": "Consulting for the integration and optimization of AI technologies.", "color": "blue" },
+                    { "imgSrc": "assets/img/services/ai_integration.png", "title": "AI Integration", "description": "Integrating AI solutions into your existing systems.", "color": "dark-blue" }
+                ]
+                },
+                {
+                "title": "Partners",
+                "description": "Collaboration with industry leaders to provide cutting-edge AI solutions.",
+                "subSections": [
+                    { "imgSrc": "assets/img/services/ai_partners.png", "title": "AI Partnerships", "description": "Partnerships with AI experts for innovative solutions.", "color": "dark-blue" }
+                ]
+                }
+            ]
+            }
+        ]
+    },
+    "HOME": {
+        "HERO": {
+            "TITLE": "Let's Innovate",
+            "SPAN_TEXT": "Together",
+            "DESCRIPTION": "At InfoSys Consulting, we are committed to providing technology solutions tailored to the unique needs of each client. Discover how we can transform your business.",
+            "BUTTON_TEXT": "Learn More"
+        },
+        "SERVICES": {
+            "TITLE": "Why Choose InfoSys Consulting?",
+            "DESCRIPTION": "We support some of the most complex projects in the public and private sectors. We ensure that today's challenges are solved and that tomorrow is even smarter through our advanced technology solutions.",
+            "CLOUD_COMPUTING": {
+            "TITLE": "Cloud Computing",
+            "DESCRIPTION": "We facilitate the transition to the cloud by translating technological needs into tailored solutions."
+            },
+            "CYBER_SECURITY": {
+            "TITLE": "Cybersecurity",
+            "DESCRIPTION": "We protect your data and systems by integrating resilient security solutions into every aspect of your mission."
+            },
+            "NETWORK_ENGINEERING": {
+            "TITLE": "Network Engineering",
+            "DESCRIPTION": "We design reliable and secure networks, essential for the smooth operation of your business."
+            },
+            "TRAINING": {
+            "TITLE": "Training",
+            "DESCRIPTION": "Our professional training transforms ambitions into operational skills."
+            },
+            "WEB_DEVELOPMENT": {
+            "TITLE": "Web Development",
+            "DESCRIPTION": "We create a variety of web software and ensure an optimal user experience."
+            },
+            "APPLICATION_DEVELOPMENT": {
+            "TITLE": "Application Development",
+            "DESCRIPTION": "We offer a range of personalized services for application development."
+            },
+            "AI": {
+            "TITLE": "Artificial Intelligence",
+            "DESCRIPTION": "We provide AI consulting services and solutions to help you achieve your goals faster."
+            },
+            "READ_MORE": "Learn more"
+        },
+        "ABOUT": {
+            "TITLE": "About Us",
+            "DESCRIPTION": {
+            "P1": "InfoSys Consulting is a company based in the United States, specializing in providing technology solutions to meet your specific needs. We offer a variety of services, including web development, cloud services, cybersecurity, IT project management, and more.",
+            "P2": "Our dedicated team works with passion to find the most suitable solutions and ensure high-quality results. Whether you need a simple technology solution or a complex project, InfoSys Consulting has the skills and experience to help you succeed."
+            },
+            "READ_MORE": "Learn more"
+        },
+        "TESTIMONIALS": {
+            "TITLE": "What Our Clients Say!",
+            "DESCRIPTION": "Our satisfied clients",
+            "TESTIMONIAL_1": {
+            "COMMENT": "InfoSys Consulting has transformed our way of working through their expertise in cybersecurity and cloud transformation. Their team is professional and responsive.",
+            "NAME": "John Doe",
+            "POSITION": "Technical Director"
+            },
+            "TESTIMONIAL_2": {
+            "COMMENT": "The web development done by InfoSys Consulting exceeded our expectations. Their understanding of our needs and innovative approach allowed us to achieve our goals.",
+            "NAME": "Marie Smith",
+            "POSITION": "Marketing Manager"
+            },
+            "TESTIMONIAL_3": {
+            "COMMENT": "The training provided by InfoSys Consulting is excellent. It has allowed our team to upskill and improve our IT project management.",
+            "NAME": "Paul Martin",
+            "POSITION": "Project Manager"
+            }
+        }
+    },
+    "CONTACT": {
+    "HERO": {
+        "TITLE": "We are here",
+        "SPAN_TEXT": "to help you",
+        "DESCRIPTION": "Do you have questions or need assistance? Don't hesitate to contact us for quick and accurate responses. We are here to provide you with the best possible service.",
+        "BUTTON_TEXT": "InfoSys Consulting"
+    },
+    "TITLE": "Get in Touch",
+    "DESCRIPTION": "We would be happy to answer any questions and discuss your needs. Here’s how you can reach us:",
+    "ADDRESS_LABEL": "Address",
+    "ADDRESS_INFO": "462 Vandegrift Road, Stafford VA 22554",
+    "CALL_LABEL": "Call Us",
+    "CALL_INFO": "(001) 571-572-2578",
+    "EMAIL_LABEL": "Send Us an Email",
+    "EMAIL_INFO": "info@infosysconsulting.com",
+    "FORM_DESCRIPTION": "Describe your need to us:",
+    "FORM": {
+        "FIRSTNAME_PLACEHOLDER": "First Name",
+        "LASTNAME_PLACEHOLDER": "Last Name",
+        "EMAIL_PLACEHOLDER": "Email",
+        "PHONE_PLACEHOLDER": "Phone",
+        "MESSAGE_PLACEHOLDER": "Message",
+        "SUBMIT_BUTTON": "Submit"
+    },
+    "MESSAGE_SUCCESS_SUMMARY": "Success",
+    "MESSAGE_SUCCESS_DETAIL": "Your message has been sent to the sales team.",
+    "MESSAGE_ERROR_SUMMARY": "Error",
+    "MESSAGE_ERROR_DETAIL": "An error occurred while sending your message. Please try again later."
+    },
+    "CAREER": {
+    "HERO": {
+        "TITLE": "Join",
+        "SPAN_TEXT": "our team",
+        "DESCRIPTION": "Explore career opportunities at InfoSys Consulting. We are looking for passionate talents to help us shape the future of technology. Browse our job openings and apply to join our innovative team.",
+        "BUTTON_TEXT": "View Jobs",
+        "BUTTON_LINK": "careers"
+    },
+    "JOBS": [
+        {
+        "title": "DevOps Engineer",
+        "description": "This position, reporting to the CTO, will work with our CTO and development team leads on DevOps projects and practices.",
+        "location": "100% Remote",
+        "responsibilities": [
+            "Design, implement, and test CloudSpace's build, deployment, and configuration management processes.",
+            "Build and test automation tools for infrastructure provisioning.",
+            "Manage code deployments across all environments.",
+            "Monitor metrics and develop ways to improve.",
+            "Build, maintain, and monitor configuration standards.",
+            "Provide daily management and administration of projects.",
+            "Build and maintain application monitoring and logging infrastructure.",
+            "Improve infrastructure and application development.",
+            "Manage CI and CD tools with the team.",
+            "Document, design, and update various development processes and practices."
+        ],
+        "qualifications": [
+            "4-year technical degree or equivalent experience.",
+            "2+ years of previous experience as a DevOps Engineer.",
+            "Hands-on experience with configuration management and application deployment tools such as Ansible.",
+            "Familiarity with Docker, Kubernetes, Prometheus, Grafana, and AWS.",
+            "Strong communication skills and attention to detail."
+        ]
+        },
+        {
+        "title": "Cybersecurity Engineer",
+        "description": "InfoSys Consulting is seeking a Cybersecurity Engineer (Cyber Defense Infrastructure Support) for our client site in Washington, DC.",
+        "location": "Washington, DC",
+        "responsibilities": [
+            "Design, develop, integrate, implement, operate, and analyze cybersecurity technologies.",
+            "Provide support to ensure that products and services meet all Information Assurance policies/procedures, network defense requirements, and best practices.",
+            "Support protection activities and response actions for government IT systems."
+        ],
+        "qualifications": [
+            "BS/BA and 8+ years of experience in the CND discipline, or an MA/MS with 6+ years of relevant experience. A candidate without a degree but with 12+ years of relevant experience may also be considered.",
+            "6+ years of experience in designing, developing, integrating, implementing, operating, and analyzing cybersecurity technologies.",
+            "Preferred certifications: CISSP, GCIA, CEH, CNDA, GCIH, or CSIH.",
+            "Prior experience with Splunk, auditing, and cloud technologies is highly desired."
+        ]
+        },
+        {
+        "title": "Cloud Network Engineer",
+        "description": "The role of Cloud/Infrastructure Engineer is to assist the client in maintaining the current network and cloud infrastructure.",
+        "location": "Remote with up to 25% travel to client sites around the Washington DC area.",
+        "responsibilities": [
+            "Interact with clients, vendors, and technical staff to analyze business and technical needs related to network and cloud infrastructure.",
+            "Configure, test, and produce detailed deployment documentation within specified deadlines.",
+            "Work closely with the Project Manager to establish and deliver consistent technical direction, collect and analyze performance metrics, and establish and enforce service level agreements.",
+            "Document engineering standards and proposals, lead or assist in the development of security architecture/engineering designs, changes, and configuration management.",
+            "Strong interpersonal and customer service skills, in addition to the ability to effectively manage and prioritize individual projects and tasks. Superior written and oral communication skills. Vendor management skills required."
+        ],
+        "qualifications": [
+            "5+ years of experience in large-scale network operations; Routers, Switches, and Load Balancers.",
+            "2+ years of hands-on operational experience with Amazon Web Services (AWS). AWS certification is strongly recommended.",
+            "Degree in Computer Science or equivalent professional experience, with a minimum of 8-10 years of hands-on experience in implementing and administering complex, multi-site, multi-vendor networks in a geographically distributed environment.",
+            "AWS Operational Experience: 2 years (Required).",
+            "Desired certifications: CCNP, ITIL, AWS Certified Cloud Practitioner, AWS Certified Solutions Architect Associate."
+        ]
+        },
+        {
+        "title": "Frontend Developer",
+        "description": "We are looking for a talented Frontend Developer to join our development team. You will work on exciting projects, using modern web technologies to create attractive and functional user interfaces.",
+        "location": "Remote with possible on-site presence as needed.",
+        "responsibilities": [
+            "Develop interactive and responsive web applications using HTML, CSS, and JavaScript.",
+            "Collaborate with UX/UI designers to translate designs into functional interfaces.",
+            "Ensure application compatibility across different browsers and devices.",
+            "Participate in code reviews and continuous improvement of development processes.",
+            "Debug and optimize web application performance."
+        ],
+        "qualifications": [
+            "Degree in Computer Science or equivalent experience.",
+            "2+ years of experience in frontend development.",
+            "Proficiency in web technologies such as HTML, CSS, JavaScript, and modern frameworks like React or Angular.",
+            "Experience with version control tools like Git.",
+            "Problem-solving and communication skills."
+        ]
+        },
+        {
+        "title": "IT Project Manager",
+        "description": "We are seeking an IT Project Manager to oversee the management and execution of complex technology projects. You will be responsible for coordinating teams, tracking timelines and budgets, and communicating with stakeholders.",
+        "location": "Washington, DC",
+        "responsibilities": [
+            "Manage and coordinate all aspects of IT projects from start to finish.",
+            "Develop detailed project plans and timelines.",
+            "Track budgets and resources.",
+            "Communicate regularly with stakeholders to ensure alignment with project objectives.",
+            "Assess risks and develop mitigation plans."
+        ],
+        "qualifications": [
+            "Degree in Project Management or related field.",
+            "5+ years of experience in IT project management.",
+            "PMP certification or similar is a plus.",
+            "Experience with Agile and Scrum methodologies.",
+            "Exceptional organizational and communication skills."
+        ]
+        },
+        {
+        "title": "Artificial Intelligence Analyst",
+        "description": "We are looking for an Artificial Intelligence Analyst to develop AI models and provide data-driven insights. You will work with our teams to design and implement innovative AI solutions.",
+        "location": "100% Remote",
+        "responsibilities": [
+            "Develop and test AI and machine learning models.",
+            "Analyze large amounts of data to extract relevant insights.",
+            "Collaborate with development teams to integrate AI solutions into existing products.",
+            "Ensure the quality and efficiency of AI models.",
+            "Stay up-to-date with the latest advancements in AI and machine learning."
+        ],
+        "qualifications": [
+            "Degree in Computer Science, Mathematics, or a related field.",
+            "3+ years of experience in developing AI and machine learning models.",
+            "Experience with AI tools and frameworks such as TensorFlow, PyTorch, or scikit-learn.",
+            "Skills in data analysis and programming in Python.",
+            "Excellent problem-solving and communication skills."
+        ]
+        }
+    ],
+    "FAQ": {
+        "TITLE": "Careers",
+        "STILL_HAVE_QUESTIONS": "Still have questions?",
+        "CONTACT_US": "Contact us",
+        "MORE_INFO_TEXT": "If you need more information or would like to speak with our team, don't hesitate to contact us. We are here to help and answer any questions you may have.",
+        "REQUIRED_TECHNICAL_SKILLS": "Required Technical Skills",
+        "DETAILED_RESPONSIBILITIES": "Detailed Responsibilities",
+        "LOCATION": "Location"
+    }
+    },
+    "ABOUT": {
+    "TITLE": "Our Vision",
+    "DESCRIPTION": [
+        "InfoSys Consulting is a company based in the United States, specializing in providing innovative technological solutions to help our clients achieve their goals. We take pride in our roots and our commitment to delivering high-quality services tailored to the unique needs of each client.",
+        "Our expertise spans several key areas: web development, cloud services, network and security, as well as IT project management. Whether you are a small business looking to establish your online presence or a large organization in need of a secure cloud infrastructure, we have the skills and experience to support you.",
+        "At InfoSys Consulting, we strive to stay at the forefront of technology to deliver sustainable and innovative solutions. Our dedicated team works closely with you to ensure that every project is completed successfully, on time, and within budget."
+    ],
+    "CONTACT_BUTTON": "Contact us",
+    "HERO": {
+        "TITLE": "About",
+        "SPAN_TEXT": "Us"
+    },
+    "WHY_US": {
+        "PARAGRAPH": "Why InfoSys Consulting?",
+        "SUBHEADING": "Our Expertise, Your Advantage. With unmatched expertise across a spectrum of IT projects, from the routine to the most intricate, we seamlessly integrate into your team to meet your project’s specific needs. We handle all the critical details—security clearances, certifications, training, audits, and contract management—allowing you to concentrate on what truly matters to your business. Trust us to manage the complexities so you can focus on driving success."
+    }
+    },
+    "FOOTER": {
+    "INTERESTED_TITLE": "Interested in our services?",
+    "INTERESTED_DESCRIPTION": "Contact us today!",
+    "CONTACT_BUTTON_TEXT": "Contact Us",
+    "USEFUL_LINKS_LABEL": "Useful links",
+    "USEFUL_LINKS": {
+        "HOME": "Home",
+        "ABOUT_US": "About us",
+        "WHO_WE_ARE": "Who We Are",
+        "WHY_US": "Why InfoSys Consulting",
+        "CAREERS": "Careers",
+        "CONTACT": "Contact"
+    },
+    "WHAT_WE_DO_LABEL": "What we do",
+    "WHAT_WE_DO": {
+        "CLOUD_TRANSFORMATION": "Cloud Transformation",
+        "CYBERSECURITY": "Cybersecurity",
+        "NETWORK_ENGINEERING": "Network Engineering",
+        "TRAINING": "Training",
+        "WEB_DEVELOPMENT": "Web Development",
+        "APPLICATION_DEVELOPMENT": "Application Development",
+        "ARTIFICIAL_INTELLIGENCE": "Artificial Intelligence"
+    },
+    "ADDRESS_LABEL": "Address:",
+    "PHONE_LABEL": "Phone:",
+    "EMAIL_LABEL": "Email:",
+    "ADDRESS": "462 Vandegrift Road, Stafford VA 22554",
+    "PHONE": "(001) 571-572-2578",
+    "EMAIL": "info@infosysconsulting.com",
+    "COPYRIGHT": "IT-Consulting Teleo © 2023"
+    },
+    "HEADER": {
+    "HOME": "Home",
+    "ABOUT_US": "About Us",
+    "WHO_WE_ARE": "Who We Are",
+    "WHY_US": "Why Us",
+    "WHAT_WE_DO": "What We Do",
+    "CLOUD_TRANSFORMATION": "Cloud Transformation",
+    "CYBERSECURITY": "Cybersecurity",
+    "NETWORK_ENGINEERING": "Network Engineering",
+    "TRAINING": "Training",
+    "WEB_DEVELOPMENT": "Web Development",
+    "APPLICATION_DEVELOPMENT": "Application Development",
+    "ARTIFICIAL_INTELLIGENCE": "Artificial Intelligence",
+    "CAREERS": "Careers",
+    "CONTACTS": "Contacts"
+    }
+}

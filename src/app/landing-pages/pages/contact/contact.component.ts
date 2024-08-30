@@ -3,6 +3,7 @@ import { MainComponent } from '../../main/main.component';
 import { Component } from '@angular/core';
 import AOS from "aos";
 import { EmailService } from '../../../utilities/services/email.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -10,34 +11,35 @@ import { EmailService } from '../../../utilities/services/email.service';
 })
 export class ContactComponent {
   heroContent = {
-    title: "We are here",
-    spanText: "to help you",
-    description: "Do you have questions or need assistance? Don't hesitate to contact us for quick and accurate responses. We are here to provide you with the best possible service.",
-    buttonText: "InfoSys Consulting",
-    buttonLink: "",
+    title: 'CONTACT.HERO.TITLE',
+    spanText: 'CONTACT.HERO.SPAN_TEXT',
+    description: 'CONTACT.HERO.DESCRIPTION',
+    buttonText: 'CONTACT.HERO.BUTTON_TEXT',
+    buttonLink: '',
     backgroundImage: 'assets/img/banners/banner-contact.jpg'
   };
   contactContent = {
-    title: "Get in Touch",
-    description: "We would be happy to answer any questions and discuss your needs. Here’s how you can reach us:",
+    title: 'CONTACT.TITLE',
+    description: 'CONTACT.DESCRIPTION',
+    backgroundImage: 'assets/img/blocks/contacts/contact-2.jpg',
     contacts: [
       {
-        icon: "pi pi-map-marker",
-        label: "Address",
-        info: "462 Vandegrift Road, Stafford VA 22554"
+        icon: 'pi pi-map-marker',
+        label: 'CONTACT.ADDRESS_LABEL',
+        info: 'CONTACT.ADDRESS_INFO'
       },
       {
-        icon: "pi pi-phone",
-        label: "Call Us",
-        info: "(001) 571-572-2578"
+        icon: 'pi pi-phone',
+        label: 'CONTACT.CALL_LABEL',
+        info: 'CONTACT.CALL_INFO'
       },
       {
-        icon: "pi pi-envelope",
-        label: "Send Us an Email",
-        info: "info@infosysconsulting.com"
+        icon: 'pi pi-envelope',
+        label: 'CONTACT.EMAIL_LABEL',
+        info: 'CONTACT.EMAIL_INFO'
       }
     ]
-  };  
+  };
   lastname: string = '';
   firstname: string = '';
   email: string = '';
@@ -45,7 +47,7 @@ export class ContactComponent {
   phone: string = '';
   message: string = '';
 
-  constructor(public appMain: MainComponent, private messageService: MessageService, private emailService: EmailService) { }
+  constructor(public appMain: MainComponent, private messageService: MessageService, private emailService: EmailService, private translate: TranslateService) { }
 
   ngOnInit(): void {
     AOS.init();
@@ -57,16 +59,16 @@ export class ContactComponent {
       .then(() => {
         this.messageService.add({
           severity: 'success',
-          summary: 'Succès',
-          detail: 'Votre message a été transmis au service commercial.'
+          summary: this.translate.instant('CONTACT.MESSAGE_SUCCESS_SUMMARY'),
+          detail: this.translate.instant('CONTACT.MESSAGE_SUCCESS_DETAIL')
         });
       })
       .catch((error) => {
         console.error('Erreur EmailJS :', error);
         this.messageService.add({
           severity: 'error',
-          summary: 'Erreur',
-          detail: 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer ultérieurement.'
+          summary: this.translate.instant('CONTACT.MESSAGE_ERROR_SUMMARY'),
+          detail: this.translate.instant('CONTACT.MESSAGE_ERROR_DETAIL')
         });
       });
     }   */
@@ -75,8 +77,8 @@ export class ContactComponent {
       // Envoyer l'email au service commercial
       this.messageService.add({
         severity: 'success',
-        summary: 'Succès',
-        detail: 'Votre message a été transmis au service commercial.'
+        summary: this.translate.instant('CONTACT.MESSAGE_SUCCESS_SUMMARY'),
+        detail: this.translate.instant('CONTACT.MESSAGE_SUCCESS_DETAIL')
       });
     }      
 }

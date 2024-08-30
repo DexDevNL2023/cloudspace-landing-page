@@ -1,4 +1,3 @@
-
 <!-- ======= Hero Section ======= -->
 <app-hero [heroContent]="heroContent"></app-hero>
 
@@ -10,8 +9,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <p>{{ servicesContent.title }}</p>
-                            <h6 class="py-3">{{ servicesContent.description }}</h6>
+                            <p>{{ servicesContent.title | translate }}</p>
+                            <h6 class="py-3">{{ servicesContent.description | translate }}</h6>
                         </div>
                     </div>
                 </div>
@@ -22,11 +21,12 @@
                     data-aos="fade-up" [attr.data-aos-delay]="service.delay">
                     <div class="service-box {{ service.color }}">
                         <div><img [src]="service.icon" alt="" class="service-icon"></div>
-                        <h3>{{ service.title }}</h3>
-                        <p>{{ service.description }}</p>
+                        <h3>{{ service.title | translate }}</h3>
+                        <p>{{ service.description | translate }}</p>
                         <a (click)="appMain.navigateToWhatWeDo('/service', service.id)" class="read-more cursor-pointer">
-                            <span>Learn more</span>
-                            <i class="pi pi-arrow-right"></i></a>
+                            <span>{{ 'HOME.SERVICES.READ_MORE' | translate }}</span>
+                            <i class="pi pi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -41,12 +41,12 @@
             <div class="row gx-0">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <div class="content">
-                        <h2>{{ aboutContent.title }}</h2>
-                        <p *ngFor="let item of aboutContent.description">{{ item.text }}</p>
+                        <h2>{{ aboutContent.title | translate }}</h2>
+                        <p *ngFor="let item of aboutContent.description">{{ item.text | translate }}</p>
                         <div class="text-center text-lg-start">
                             <a (click)="appMain.scrollTo('services')"
                                 class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center cursor-pointer">
-                                <span>Learn more</span>
+                                <span>{{ 'HOME.ABOUT.READ_MORE' | translate }}</span>
                                 <i class="pi pi-arrow-right"></i>
                             </a>
                         </div>
@@ -64,8 +64,8 @@
     <section id="testimonials" class="testimonials">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <header class="section-header">
-                <h2>{{ testimonialsContent.title }}</h2>
-                <p>{{ testimonialsContent.description }}</p>
+                <h2>{{ testimonialsContent.title | translate }}</h2>
+                <p>{{ testimonialsContent.description | translate }}</p>
             </header>
             
             <p-carousel [value]="testimonialsContent.testimonials" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="6000">
@@ -74,11 +74,11 @@
                         <div class="stars">
                             <i class="pi pi-star-fill" *ngFor="let star of getStarsArray(testimonial.stars)"></i>
                         </div>
-                        <p>{{ testimonial.comment }}</p>
+                        <p>{{ testimonial.comment | translate }}</p>
                         <div class="profile mt-auto">
                             <img [src]="testimonial.imageUrl" class="testimonial-img" alt="">
-                            <h3>{{ testimonial.name }}</h3>
-                            <h4 *ngIf="testimonial.position">{{ testimonial.position }}</h4>
+                            <h3>{{ testimonial.name | translate }}</h3>
+                            <h4 *ngIf="testimonial.position">{{ testimonial.position | translate }}</h4>
                         </div>
                     </div>
                 </ng-template>

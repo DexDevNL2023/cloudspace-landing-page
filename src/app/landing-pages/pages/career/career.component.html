@@ -5,8 +5,8 @@
     <section id="faq" class="faq">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <header class="section-header">
-                <p>Careers</p>
-                <div class="text-gray-600 line-height-3 mb-6">{{ heroContent.description }}</div>
+                <p>{{ 'CAREER.FAQ.TITLE' | translate }}</p>
+                <div class="text-gray-600 line-height-3 mb-6">{{ 'CAREER.HERO.DESCRIPTION' | translate }}</div>
             </header>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -16,23 +16,22 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     [attr.data-bs-target]="'#faq-content-' + i">
-                                    {{ career.title }}
+                                    {{ career.title | translate }}
                                 </button>
                             </h2>
                             <div [id]="'faq-content-' + i" class="accordion-collapse collapse"
                                 data-bs-parent="#faqlist1">
                                 <div class="accordion-body">
-                                    <h3 class="pt-3">{{ career.title }}</h3>
-                                    <p><strong>Location:</strong> {{ career.location }}</p>
-                                    <p>{{ career.description }}</p>
-                                    <h3>Detailed Responsibilities</h3>
+                                    <h3 class="pt-3">{{ career.title | translate }}</h3>
+                                    <p><strong>{{ 'CAREER.FAQ.LOCATION' | translate }}:</strong> {{ career.location | translate }}</p>
+                                    <p>{{ career.description | translate }}</p>
+                                    <h3>{{ 'CAREER.FAQ.DETAILED_RESPONSIBILITIES' | translate }}</h3>
                                     <ul>
-                                        <li *ngFor="let responsibility of career.responsibilities">{{ responsibility }}
-                                        </li>
+                                        <li *ngFor="let responsibility of career.responsibilities">{{ responsibility | translate }}</li>
                                     </ul>
-                                    <h3>Required Technical Skills</h3>
+                                    <h3>{{ 'CAREER.FAQ.REQUIRED_TECHNICAL_SKILLS' | translate }}</h3>
                                     <ul>
-                                        <li *ngFor="let qualification of career.qualifications">{{ qualification }}</li>
+                                        <li *ngFor="let qualification of career.qualifications">{{ qualification | translate }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,14 +50,14 @@
                     [style]="{ 'background-color': '#9c27b0', color: '#ffffff' }"></p-avatar>
             </p-avatarGroup>
         </div>
-        <div class="font-medium text-xl mt-5 mb-3">Still have questions?</div>
+        <div class="font-medium text-xl mt-5 mb-3">{{ 'CAREER.FAQ.STILL_HAVE_QUESTIONS' | translate }}</div>
         <p class="text-700 line-height-3 mt-0 mb-5">
-            If you need more information or would like to speak with our team, don't hesitate to contact us. We are here to help and answer any questions you may have.
+            {{ 'CAREER.FAQ.MORE_INFO_TEXT' | translate }}
         </p>
-        <button (click)="appMain.navigateToContact()" pbutton="" pripple="" label="Contact us" icon="pi pi-send"
+        <button (click)="appMain.navigateToContact()" pbutton="" pripple="" icon="pi pi-send"
             class="p-element p-ripple p-button-help p-button p-component">
             <span class="p-button-icon p-button-icon-left pi pi-send" aria-hidden="true"></span>
-            <span class="p-button-label">Contact us</span><span class="p-ink"></span>
+            <span class="p-button-label">{{ 'CAREER.FAQ.CONTACT_US' | translate }}</span><span class="p-ink"></span>
         </button>
     </div>
 </main><!-- End #main -->
